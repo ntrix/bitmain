@@ -7,7 +7,13 @@
   </p>
 </div>
 
-<div class="play-container">
+<div
+  class="play-container"
+  [ngStyle]="{
+    'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
+    border: clickCounter > 4 ? '4px solid black' : 'none'
+  }"
+>
   <p>
     <input type="text" [(ngModel)]="name" /><br />
     <strong>You said: </strong> {{ name }}
