@@ -19,11 +19,11 @@ header {
   padding: 1em 0;
 
   a {
-    color: white;
+    color: navy;
     text-decoration: none;
+    font-weight: bold;
   }
   a.logo {
-    font-weight: bold;
   }
 
   nav {
@@ -38,8 +38,9 @@ header {
         padding: 1em;
 
         &:hover {
+          color: black;
           background: linear-gradient($secondary, white);
-          border-bottom: thin solid $secondary;
+          border-bottom: thin solid black;
         }
       }
     }
