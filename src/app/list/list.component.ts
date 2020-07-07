@@ -24,4 +24,7 @@ export class ListComponent implements OnInit {
       // console.log(this.brews);
     });
   }
+  vol(br) {
+    return (br[7] * br[8]) | 0;
+  }
 }

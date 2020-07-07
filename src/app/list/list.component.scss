@@ -17,20 +17,23 @@ ul {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px $secondary;
 
     p {
-      font-weight: bold;
       margin: 0;
+      font-weight: bold;
     }
 
-    p.name {
-      font-weight: bold;
+    p.symbol {
+      text-transform: uppercase;
       font-size: 1.2rem;
     }
-    p.country {
-      text-transform: uppercase;
+    p.price {
       font-size: 0.9rem;
       flex-grow: 1;
+    }
+    p.volume {
+      font-size: 0.8rem;
     }
   }
 }

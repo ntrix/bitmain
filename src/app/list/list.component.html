@@ -4,9 +4,10 @@
   <li *ngFor="let brew of brews">
     <p class="symbol">{{ brew[0].slice(1) }}</p>
     <br />
-    <p class="last-price">{{ brew[7] | currency }}</p>
+    <p class="price">{{ brew[7] | currency }}</p>
     <br />
-    <p class="volume">Volume: {{ brew[8] | currency }}</p>
+    Volume:
+    <p class="volume">{{ vol(brew) | currency }}</p>
     <!-- <a class="volume" href="{{ brew.volume }}">site</a> -->
   </li>
 </ul>
