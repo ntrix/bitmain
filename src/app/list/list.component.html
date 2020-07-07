@@ -1,8 +1,17 @@
-<div class="container">
-  <h1>Crypto: x{{ unitSymbol }}</h1>
-  <div class="placeholder">
-    Loading...
-  </div>
+<div class="container list-container placeholder" [hidden]="hidden">
+  <h1>CryptoAPI: Loading ...</h1>
+  <ul>
+    <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      <p class="symbol">SYMBOL</p>
+      <br />
+      <p class="price">...</p>
+      <br />
+      Volume:
+    </li>
+  </ul>
+</div>
+<div class="container list-container">
+  <h1>CryptoAPI: x{{ unitSymbol }}</h1>
   <ul *ngIf="brews">
     <li *ngFor="let brew of brews">
       <p class="symbol">{{ brew[0].slice(1) }}</p>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Bitmain';
 
-  darkModeActive: boolean = true;
+  darkModeActive: boolean = false;
   showMenu: boolean = false;
 
   toggleMenu() {

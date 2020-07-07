@@ -11,11 +11,12 @@ $color2-d: #b290ff;
 
 .root__container {
   width: 100vw;
-  height: 100vh;
+  height: 140vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.5fr auto;
   position: relative;
+  user-select: none;
 }
 
 /*
@@ -37,6 +38,7 @@ $color2-d: #b290ff;
   overflow: hidden;
   pointer-events: none;
   z-index: 25;
+  user-select: none;
 }
 
 .side-menu__container-active {
@@ -157,7 +159,7 @@ $color2-d: #b290ff;
 .main__header {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.4fr;
+  grid-template-columns: 4fr 5.5fr 2.5fr;
   grid-template-rows: 1fr;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   height: 4rem;
@@ -189,7 +191,7 @@ $color2-d: #b290ff;
   height: 1rem;
   width: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(155, 245, 155);
   display: inline-block;
   transition: background-color 300ms linear;
 }
@@ -197,22 +199,22 @@ $color2-d: #b290ff;
 .mode-toggle__circle {
   height: 1.4rem;
   width: 1.4rem;
-  background-color: $color1-d;
+  background-color: $color2;
   position: absolute;
   top: -0.1rem;
   border-radius: 50%;
   box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
   transition: left 300ms linear;
-  left: 0rem;
+  left: -0.1rem;
 }
 
 .mode-toggle__circle-checked {
-  background-color: $color3;
-  left: 1.55rem;
+  background-color: $color2-d;
+  left: 1.4rem;
 }
 
 .mode-toggle__bg-checked {
-  background-color: $color2-d;
+  background-color: rgb(228, 81, 81);
 }
 
 .mode-toggle__text {
@@ -253,6 +255,7 @@ $color2-d: #b290ff;
 }
 
 .logo__text {
+  text-transform: uppercase;
   color: $color1-d;
 }
 

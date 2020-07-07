@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent implements OnInit {
+  hidden: boolean = false;
   brews = [];
   unitSymbol: string = 'USD';
   constructor(private _http: HttpService) {}
@@ -21,7 +22,7 @@ export class ListComponent implements OnInit {
           maxSymbol--;
         }
       });
-      // console.log(this.brews);
+      if (this.brews) this.hidden = true;
     });
   }
   vol(br) {
