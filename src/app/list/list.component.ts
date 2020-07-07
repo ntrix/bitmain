@@ -13,11 +13,15 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this._http.getBeer().subscribe((data) => {
+      let maxSymbol = 9;
       Object.values(data).forEach((obj) => {
-        obj[8] = ~~obj[8];
-        if (obj[0].slice(4, 7) == this.item) this.brews.push(obj);
+        if (maxSymbol > 0 && obj[0].slice(4, 7) == this.item) {
+          obj[8] = ~~obj[8];
+          this.brews.push(obj);
+          maxSymbol--;
+        }
       });
-      console.log(this.brews);
+      // console.log(this.brews);
     });
   }
 }

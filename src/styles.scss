@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
-$primary: rgb(111, 0, 255);
+$primary: rgb(65, 102, 188);
+$secondary: rgba(65, 102, 188, 0.6);
 
 body {
   margin: 0;
@@ -14,7 +15,7 @@ body {
 }
 
 header {
-  background: $primary;
+  background: linear-gradient($primary, white);
   padding: 1em 0;
 
   a {
@@ -37,7 +38,8 @@ header {
         padding: 1em;
 
         &:hover {
-          background: darken($primary, 10%);
+          background: linear-gradient($secondary, white);
+          border-bottom: thin solid $secondary;
         }
       }
     }
