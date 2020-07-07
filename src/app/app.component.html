@@ -10,7 +10,7 @@
     (click)="$event.stopImmediatePropagation()"
   >
     <section class="menu-header">
-      <span class="greeting__text">Welcome Back</span>
+      <span class="greeting__text">Your dashboard</span>
       <div class="profile-image__container">
         <img src="" alt="profile-image" class="profile__image" />
       </div>
@@ -30,16 +30,61 @@
     class="main__header"
   >
     <div class="left__section">
-      <a (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon"
-        >[+]</a
+      <svg
+        (click)="toggleMenu()"
+        class="hamburger__icon"
+        id="Menu_Burger_Icon"
+        data-name="Menu Burger Icon"
+        viewBox="31.5 30 49.9 34"
       >
-      <a routerLink="/" class="logo" alt="Bitma"
-        ><img src="../favicon.ico" /> <span>BIT</span>MAN
+        <style>
+          ytp-player-minimized {
+            overflow: hidden;
+            outline: none;
+          }
+        </style>
+        <defs>
+          <style>
+            .hamburger__icon__fill {
+              fill: #594e78;
+            }
+          </style>
+        </defs>
+        <rect
+          id="Rectangle_9"
+          width="49.9"
+          height="6"
+          class="hamburger__icon__fill"
+          data-name="Rectangle 9"
+          rx="2"
+          transform="translate(31.5 58)"
+        />
+        <rect
+          id="Rectangle_10"
+          width="49.9"
+          height="6"
+          class="hamburger__icon__fill"
+          data-name="Rectangle 10"
+          rx="2"
+          transform="translate(31.5 44)"
+        />
+        <rect
+          id="Rectangle_11"
+          width="49.9"
+          height="6"
+          class="hamburger__icon__fill"
+          data-name="Rectangle 11"
+          rx="2"
+          transform="translate(31.5 30)"
+        />
+      </svg>
+      <a routerLink="/" class="logo__text" alt="Bitmain"
+        ><span>BIT</span>MAIN<img src="../favicon.ico" />
       </a>
     </div>
 
     <nav>
-      <ul>
+      <ul class="logo__text">
         <li><a href="#" routerLink="/">Home</a></li>
         <li><a href="#" routerLink="/list">List</a></li>
         <li><a href="#" routerLink="/trade">Trade</a></li>
@@ -83,6 +128,6 @@
   <!-- Footer -->
 
   <footer class="main__footer">
-    <small class="copyright__text">Copyright &copy; 2019 Weenie</small>
+    <small class="copyright__text">Copyright &copy; 2019 Bitmain</small>
   </footer>
 </div>

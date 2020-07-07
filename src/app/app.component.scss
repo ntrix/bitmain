@@ -1,14 +1,11 @@
 $color3: #fff;
-$color1: #64a7fb;
-$color2: #6ee6dffb;
-$color3_d: #fff;
-$color1_d: #2e1d65;
-$color2_d: #b290ff;
+$color1: #5f84fb;
+$color2: #00ff9b;
+$color3-d: #000;
+$color1-d: #2e1d65;
+$color2-d: #b290ff;
 
-.logo span {
-  color: $color1;
-}
-.logo .second {
+.logo__text span {
   color: $color2;
 }
 
@@ -75,7 +72,7 @@ $color2_d: #b290ff;
   height: 100%;
   width: 90%;
   max-width: 26rem;
-  background-color: white;
+  background-color: $color3;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   display: grid;
   grid-template-columns: 1fr;
@@ -90,7 +87,9 @@ $color2_d: #b290ff;
 }
 
 .menu-header {
-  background: linear-gradient(to right, #00ff9b, #5f84fb);
+  // slide-menu-header #00ff9b, #5f84fb);
+  background: linear-gradient(to right, $color2, $color1);
+
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
@@ -98,7 +97,7 @@ $color2_d: #b290ff;
   box-sizing: border-box;
   width: 100%;
   align-content: center;
-  color: white;
+  color: $color3;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
@@ -145,7 +144,7 @@ $color2_d: #b290ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: $color3;
   align-self: center;
   margin-left: 2rem;
 }
@@ -158,7 +157,7 @@ $color2_d: #b290ff;
 .main__header {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.25fr;
+  grid-template-columns: 1fr 1fr 0.4fr;
   grid-template-rows: 1fr;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   height: 4rem;
@@ -166,11 +165,13 @@ $color2_d: #b290ff;
   align-items: center;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
+  background: linear-gradient($color1, $color2);
+  color: $color3;
 }
 
 .main__header-dark {
-  background-color: #2b244d;
-  color: $color3;
+  background: linear-gradient($color1-d, $color2-d);
+  color: $color3-d;
 }
 
 .toggle-button__container {
@@ -194,24 +195,24 @@ $color2_d: #b290ff;
 }
 
 .mode-toggle__circle {
-  height: 1.3rem;
-  width: 1.3rem;
-  background-color: #2b244d;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: $color1-d;
   position: absolute;
-  top: -0.2rem;
+  top: -0.1rem;
   border-radius: 50%;
   box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
   transition: left 300ms linear;
-  left: 0.1rem;
+  left: 0rem;
 }
 
 .mode-toggle__circle-checked {
-  background-color: white;
-  left: 1.75rem;
+  background-color: $color3;
+  left: 1.55rem;
 }
 
 .mode-toggle__bg-checked {
-  background-color: #ff0070;
+  background-color: $color2-d;
 }
 
 .mode-toggle__text {
@@ -225,7 +226,7 @@ $color2_d: #b290ff;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  max-width: 5rem;
+  max-width: 15rem;
 }
 
 .date__text {
@@ -248,24 +249,19 @@ $color2_d: #b290ff;
 
 .logo__icon {
   // background: url("../icons/weenie.png");
-  height: 2rem;
-  margin-left: 1rem;
+  padding-left: 15rem;
 }
 
 .logo__text {
-  fill: #2b244d;
+  color: $color1-d;
 }
 
-.logo__text-dark {
-  fill: #ffff;
+.logo__text-dark .a {
+  color: $color2;
 }
 
 .hamburger__icon__fill {
-  fill: #2b244d;
-}
-
-.hamburger__icon__fill-dark {
-  fill: #ffff;
+  fill: $color3;
 }
 
 /*
@@ -281,14 +277,14 @@ $color2_d: #b290ff;
   top: 0;
   left: 0;
   z-index: -2;
-  opacity: 0.5;
+  opacity: 0.4;
   background: linear-gradient(to bottom, $color2, $color1);
   transition: opacity 300ms linear;
 }
 
 .main-container__bg-dark {
   opacity: 1;
-  background: linear-gradient(to bottom, $color2_d, $color1_d);
+  background: linear-gradient(to bottom, $color2-d, $color1-d);
   transition: opacity 300ms linear;
 }
 
@@ -307,7 +303,7 @@ $color2_d: #b290ff;
 
 .copyright__text {
   letter-spacing: 0.1rem;
-  color: white;
+  color: $color3;
 }
 
 @media only screen and (max-width: 300px) {
