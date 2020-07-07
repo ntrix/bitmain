@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
-$primary: rgb(65, 102, 188);
-$secondary: rgba(65, 102, 188, 0.6);
+$color3: white;
+$color1: #64a7fb;
+$color2: #6ee6dffb;
+$color3_d: white;
+$color1_d: #2e1d65;
+$color2_d: #b290ff;
 
 body {
   margin: 0;
@@ -15,7 +19,7 @@ body {
 }
 
 header {
-  background: linear-gradient($primary, white);
+  background: linear-gradient($color1, $color2);
   padding: 1em 0;
 
   a {
@@ -23,8 +27,8 @@ header {
     text-decoration: none;
     font-weight: bold;
   }
-  a.logo {
-  }
+  // a.logo {
+  // }
 
   nav {
     float: right;
@@ -39,7 +43,7 @@ header {
 
         &:hover {
           color: black;
-          background: linear-gradient($secondary, white);
+          background: linear-gradient($color2, $color3);
           border-bottom: thin solid black;
         }
       }

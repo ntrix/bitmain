@@ -1,10 +1,43 @@
-<header>
-  <div class="container">
-    <a routerLink="/" class="logo" alt="Bitmania">
-      <span>BIT</span>M<img src="../favicon.ico" />N<span class="second"
-        >IA</span
+<!-- Slide Menu-->
+<aside
+  class="side-menu__container"
+  [ngClass]="{ 'side-menu__container-active': showMenu }"
+  (click)="toggleMenu()"
+>
+  <nav
+    class="slide-menu"
+    [ngClass]="{ 'slide-menu-active': showMenu }"
+    (click)="$event.stopImmediatePropagation()"
+  >
+    <section class="menu-header">
+      <span class="greeting__text">Welcome Back</span>
+      <div class="profile-image__container">
+        <img src="" alt="profile-image" class="profile__image" />
+      </div>
+      <div class="account-details">
+        <span class="name__text">Ngoc Tien Nguyen</span>
+        <span class="email__text">ngoctienn@gmail.com</span>
+      </div>
+    </section>
+    <section class="menu-body"></section>
+    <section class="menu-footer"></section>
+  </nav>
+</aside>
+
+<div class="root__container">
+  <header
+    [ngClass]="{ 'main__header-dark': darkModeActive }"
+    class="main__header"
+  >
+    <div class="left__section">
+      <a (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon"
+        >[+]</a
       >
-    </a>
+      <a routerLink="/" class="logo" alt="Bitma"
+        ><img src="../favicon.ico" /> <span>BIT</span>MAN
+      </a>
+    </div>
+
     <nav>
       <ul>
         <li><a href="#" routerLink="/">Home</a></li>
@@ -12,9 +45,44 @@
         <li><a href="#" routerLink="/trade">Trade</a></li>
       </ul>
     </nav>
-  </div>
-</header>
 
-<div class="container">
-  <router-outlet></router-outlet>
+    <div class="mode-toggle__container">
+      <span class="mode-toggle__text">Light</span>
+
+      <label class="toggle-button__container">
+        <input
+          (click)="modeToggleSwitch()"
+          type="checkbox"
+          class="mode-toggle__input"
+        />
+        <span
+          [ngClass]="{ 'mode-toggle__bg-checked': darkModeActive }"
+          class="mode-toggle__bg"
+        ></span>
+        <span
+          [ngClass]="{ 'mode-toggle__circle-checked': darkModeActive }"
+          class="mode-toggle__circle"
+        ></span>
+      </label>
+
+      <span class="mode-toggle__text">Dark</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  <!--<router-outlet></router-outlet>-->
+  <main class="main__container">
+    <div
+      class="main-container__bg"
+      [ngClass]="{ 'main-container__bg-dark': darkModeActive }"
+    ></div>
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="main__footer">
+    <small class="copyright__text">Copyright &copy; 2019 Weenie</small>
+  </footer>
 </div>
