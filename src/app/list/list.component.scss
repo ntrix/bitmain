@@ -14,19 +14,20 @@ ul {
 
   li {
     background: linear-gradient($color2, $color2-d);
-    padding: 1em;
-    margin-right: 10px;
+    padding: 1rem;
+    margin: 1rem;
     width: 20%;
     height: 200px;
-    margin-bottom: 1em;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px $color1-d;
+    box-shadow: 0 0.3rem $color1-d;
 
-    p {
+    p,
+    h1 {
       margin: 0;
       font-weight: bold;
+      color: $color1-d;
     }
 
     p.symbol {

@@ -1,13 +1,17 @@
-<h1>Crypto: Symbol/{{ item }}</h1>
-
-<ul *ngIf="brews">
-  <li *ngFor="let brew of brews">
-    <p class="symbol">{{ brew[0].slice(1) }}</p>
-    <br />
-    <p class="price">{{ brew[7] | currency }}</p>
-    <br />
-    Volume:
-    <p class="volume">{{ vol(brew) | currency }}</p>
-    <!-- <a class="volume" href="{{ brew.volume }}">site</a> -->
-  </li>
-</ul>
+<div class="container">
+  <h1>Crypto: x{{ unitSymbol }}</h1>
+  <div class="placeholder">
+    Loading...
+  </div>
+  <ul *ngIf="brews">
+    <li *ngFor="let brew of brews">
+      <p class="symbol">{{ brew[0].slice(1) }}</p>
+      <br />
+      <p class="price">{{ brew[7] | currency }}</p>
+      <br />
+      Volume:
+      <p class="volume">{{ vol(brew) | currency }}</p>
+      <!-- <a class="volume" href="{{ brew.volume }}">site</a> -->
+    </li>
+  </ul>
+</div>
