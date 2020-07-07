@@ -1,0 +1,8 @@
+$primary: rgb(65, 102, 188);
+$secondary: rgba(65, 102, 188, 0.6);
+header div a span {
+  color: $primary;
+}
+header div a .second {
+  color: $secondary;
+}
