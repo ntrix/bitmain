@@ -8,24 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CryptoComponent implements OnInit {
   hidden: boolean = false;
-  brews = [];
+  datas = [];
   unitSymbol: string = 'USD';
+
   constructor(private _http: CryptoService) {}
 
   ngOnInit() {
     this._http.getBeer().subscribe((data) => {
       let maxSymbol = 9;
       Object.values(data).forEach((obj) => {
-        if (maxSymbol > 0 && obj[0].slice(4, 7) == this.unitSymbol) {
+        if (maxSymbol && obj[0].slice(4, 7) == this.unitSymbol) {
           obj[8] = ~~obj[8];
-          this.brews.push(obj);
+          this.datas.push(obj);
           maxSymbol--;
         }
       });
-      if (this.brews) this.hidden = true;
+      if (this.datas) this.hidden = true;
     });
   }
-  vol(br) {
-    return (br[7] * br[8]) | 0;
+
+  vol(arg) {
+    return (arg[7] * arg[8]) | 0; //return price*volume = volume in USD
   }
 }

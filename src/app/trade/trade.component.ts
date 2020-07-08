@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade.component.scss'],
 })
 export class TradeComponent implements OnInit {
-  hidden: boolean = false;
+  hidden = false;
   key = [];
   val = [];
 
