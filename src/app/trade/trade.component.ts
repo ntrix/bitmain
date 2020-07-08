@@ -15,7 +15,6 @@ export class TradeComponent implements OnInit {
 
   ngOnInit() {
     this._http.getBeer().subscribe((data) => {
-      console.log(data);
       let temp = Object.values(data)[0];
       this.key = Object.keys(temp);
       Object.values(temp).forEach((obj) => {
