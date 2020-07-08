@@ -1,7 +1,31 @@
-<div class="container">
-  <h1>Forex API</h1>
-  <p>
-    <input type="text" [(ngModel)]="name" /><br />
-    <strong>You want to find symbol: </strong> {{ name }}
-  </p>
+<div class="container list-container placeholder" [hidden]="hidden">
+  <h1>Forex API: Loading ...</h1>
+  <ul>
+    <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      <div class="container">
+        <br />
+        <p class="symbol">SYMBOL</p>
+        <br />
+        <hr />
+        <br />
+        <p class="symbol">...</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="container list-container" [hidden]="!hidden">
+  <h1>Forex Trading: x{{ name }}</h1>
+  <ul *ngIf="val">
+    <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      <div class="container">
+        <br />
+        <p class="symbol">{{ key[i] }}</p>
+        <br />
+        <hr />
+        <br />
+        <p class="symbol">{{ val[i] }}</p>
+      </div>
+    </li>
+  </ul>
 </div>

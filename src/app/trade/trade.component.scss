@@ -1,0 +1,44 @@
+$color3: #fff;
+$color1: #5f84fb;
+$color2: #00ff9b;
+$color3-d: #fff;
+$color1-d: #2e1d65;
+$color2-d: #b290ff;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    background: linear-gradient(to bottom, $color2, #fff);
+    margin: 1rem;
+    width: 20%;
+    height: 200px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.1rem 0.3rem $color1-d;
+
+    p,
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      color: $color1-d;
+    }
+
+    p.symbol {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+    p.price {
+      font-size: 0.9rem;
+      flex-grow: 1;
+    }
+    p.volume {
+      font-size: 0.7rem;
+    }
+  }
+}

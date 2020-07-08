@@ -1,4 +1,4 @@
-import { HttpService } from './../http.service';
+import { FxService } from './../fx.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,26 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TradeComponent implements OnInit {
   hidden: boolean = false;
-  brews = [];
+  key = [];
+  val = [];
   unitSymbol: string = 'USD';
   name: string;
 
-  constructor(private _http: HttpService) {}
+  constructor(private _http: FxService) {}
 
   ngOnInit() {
     this._http.getBeer().subscribe((data) => {
-      let maxSymbol = 9;
-      Object.values(data).forEach((obj) => {
-        if (maxSymbol > 0 && obj[0].slice(4, 7) == this.unitSymbol) {
-          obj[8] = ~~obj[8];
-          this.brews.push(obj);
-          maxSymbol--;
-        }
+      console.log(data);
+      let temp = Object.values(data)[0];
+      this.key = Object.keys(temp);
+      Object.values(temp).forEach((obj) => {
+        this.val.push(Object.values(obj)[0]);
       });
-      if (this.brews) this.hidden = true;
     });
-  }
-  vol(br) {
-    return (br[7] * br[8]) | 0;
+    if (this.val) this.hidden = true;
   }
 }
