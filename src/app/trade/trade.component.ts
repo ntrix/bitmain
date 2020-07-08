@@ -1,4 +1,4 @@
-import { FxService } from './../fx.service';
+import { FxService } from '../home/services/fx.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

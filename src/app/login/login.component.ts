@@ -1,4 +1,4 @@
-import { FbService } from './../fb.service';
+import { FbService } from '../home/services/fb.service';
 import { Component, OnInit } from '@angular/core';
 import { first, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
