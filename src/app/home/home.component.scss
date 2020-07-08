@@ -54,13 +54,14 @@ span {
     grid-template-columns: 1fr 1fr;
   }
   .btn {
-    width: 16rem;
+    width: 22rem;
     height: 6em;
     background: #f3f0f1;
     position: relative;
     background: #f3f0f1;
     margin: 1rem 2rem;
     border-radius: 2rem;
+    padding-left: 1rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
