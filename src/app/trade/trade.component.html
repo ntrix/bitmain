@@ -1,30 +1,7 @@
-<h1>Forex API</h1>
-
-<div class="play-container">
-  <p>
-    You've clicked <span (click)="countClick()">this</span>
-    {{ clickCounter }} times.
-  </p>
-</div>
-
-<div
-  class="play-container"
-  [ngStyle]="{
-    'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
-    border: clickCounter > 4 ? '4px solid black' : 'none'
-  }"
->
+<div class="container">
+  <h1>Forex API</h1>
   <p>
     <input type="text" [(ngModel)]="name" /><br />
-    <strong>You said: </strong> {{ name }}
+    <strong>You want to find symbol: </strong> {{ name }}
   </p>
-</div>
-
-<div class="play-container" [class.active]="clickCounter > 4">
-  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
-    <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-  </ng-template>
-  <ng-template #none>
-    <p>The click counter is <strong>not greater</strong> than 4.</p>
-  </ng-template>
 </div>

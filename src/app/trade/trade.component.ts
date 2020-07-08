@@ -1,3 +1,4 @@
+import { HttpService } from './../http.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,19 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade.component.scss'],
 })
 export class TradeComponent implements OnInit {
-  clickCounter: number = 0;
-  name: string = '';
+  hidden: boolean = false;
+  brews = [];
+  unitSymbol: string = 'USD';
+  name: string;
 
-  constructor() {}
+  constructor(private _http: HttpService) {}
 
-  ngOnInit(): void {}
-
-  countClick() {
-    this.clickCounter += 1;
+  ngOnInit() {
+    this._http.getBeer().subscribe((data) => {
+      let maxSymbol = 9;
+      Object.values(data).forEach((obj) => {
+        if (maxSymbol > 0 && obj[0].slice(4, 7) == this.unitSymbol) {
+          obj[8] = ~~obj[8];
+          this.brews.push(obj);
+          maxSymbol--;
+        }
+      });
+      if (this.brews) this.hidden = true;
+    });
   }
-
-  setClasses = () =>
-    this.clickCounter <= 4
-      ? { active: false, notactive: true }
-      : { active: true, notactive: false };
+  vol(br) {
+    return (br[7] * br[8]) | 0;
+  }
 }
