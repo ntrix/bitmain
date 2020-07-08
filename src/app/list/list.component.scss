@@ -13,11 +13,7 @@ ul {
   flex-wrap: wrap;
 
   li {
-    background: linear-gradient(
-      to bottom right,
-      rgb(155, 245, 155),
-      rgb(228, 81, 81)
-    );
+    background: linear-gradient(to bottom right, rgb(155, 245, 155), $color1);
     padding: 1rem;
     margin: 1rem;
     width: 20%;
@@ -25,7 +21,7 @@ ul {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.2rem 0.4rem $color1-d;
+    box-shadow: 0.1rem 0.3rem $color1-d;
 
     p,
     h1 {

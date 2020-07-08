@@ -168,12 +168,12 @@ $color2-d: #b290ff;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
   background: linear-gradient($color1, $color2);
-  color: $color3;
+  color: $color3-d;
 }
 
 .main__header-dark {
   background: linear-gradient($color1-d, $color2-d);
-  color: $color3-d;
+  color: $color3;
 }
 
 .toggle-button__container {
@@ -199,7 +199,7 @@ $color2-d: #b290ff;
 .mode-toggle__circle {
   height: 1.4rem;
   width: 1.4rem;
-  background-color: $color2;
+  background-color: $color2-d;
   position: absolute;
   top: -0.1rem;
   border-radius: 50%;
@@ -209,12 +209,12 @@ $color2-d: #b290ff;
 }
 
 .mode-toggle__circle-checked {
-  background-color: $color2-d;
+  background-color: $color2;
   left: 1.4rem;
 }
 
 .mode-toggle__bg-checked {
-  background-color: rgb(228, 81, 81);
+  background-color: $color2-d;
 }
 
 .mode-toggle__text {
@@ -259,8 +259,11 @@ $color2-d: #b290ff;
   color: $color1-d;
 }
 
-.logo__text-dark .a {
-  color: $color2;
+.logo__text li a {
+  color: $color1-d;
+}
+.logo__text-dark li a {
+  color: $color3;
 }
 
 .hamburger__icon__fill {

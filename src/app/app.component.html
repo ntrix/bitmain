@@ -10,7 +10,7 @@
     (click)="$event.stopImmediatePropagation()"
   >
     <section class="menu-header">
-      <span class="greeting__text">Your dashboard</span>
+      <span class="greeting__text">Your Positions</span>
       <div class="profile-image__container">
         <img src="" alt="profile-image" class="profile__image" />
       </div>
@@ -84,7 +84,7 @@
     </div>
 
     <nav>
-      <ul class="logo__text">
+      <ul [ngClass]="{ 'logo__text-dark': darkModeActive }" class="logo__text">
         <li><a href="#" routerLink="/">Home</a></li>
         <li><a href="#" routerLink="/list">List</a></li>
         <li><a href="#" routerLink="/trade">Trade</a></li>
