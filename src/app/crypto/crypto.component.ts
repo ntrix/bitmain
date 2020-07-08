@@ -2,11 +2,11 @@ import { CryptoService } from '../home/services/crypto.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss'],
+  selector: 'app-crypto',
+  templateUrl: './crypto.component.html',
+  styleUrls: ['./crypto.component.scss'],
 })
-export class ListComponent implements OnInit {
+export class CryptoComponent implements OnInit {
   hidden: boolean = false;
   brews = [];
   unitSymbol: string = 'USD';
