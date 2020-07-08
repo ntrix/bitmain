@@ -1,4 +1,4 @@
-<div class="container list-container placeholder" [hidden]="hidden">
+<div class="container placeholder" [hidden]="hidden">
   <h1>CryptoAPI: Loading ...</h1>
   <ul>
     <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
@@ -10,7 +10,7 @@
     </li>
   </ul>
 </div>
-<div class="container list-container" [hidden]="!hidden">
+<div class="container" [hidden]="!hidden">
   <h1>CryptoAPI: x{{ unitSymbol }}</h1>
   <ul *ngIf="datas">
     <li *ngFor="let dat of datas">

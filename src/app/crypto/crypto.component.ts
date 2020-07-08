@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crypto.component.scss'],
 })
 export class CryptoComponent implements OnInit {
-  hidden: boolean = false;
+  hidden = false;
   datas = [];
   unitSymbol: string = 'USD';
 
