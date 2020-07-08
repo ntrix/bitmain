@@ -112,6 +112,10 @@ $color0: #f3f0f1;
 
 .menu-body {
   background: linear-gradient(to bottom, $color2, #fff);
+}
+.menu-body-container {
+  font-size: 1.5rem;
+  margin-left: 1rem;
   display: grid;
   grid-template-rows: 20% 30% 30% 20%;
 }
