@@ -1,24 +1,35 @@
-<h1>Welcome!</h1>
+<div class="container">
+  <div class="welcome__text">
+    <h1>WELCOME</h1>
+    <h2 class="welcome__text">
+      to the digital asset trading app
+    </h2>
+    <p>multi platform</p>
+  </div>
+  <button class="brn btn-primary">Login</button>
+  <button class="brn btn-secondary">Crypto demo</button>
+  <button class="brn btn-secondary">Forex demo</button>
 
-<div class="play-container">
-  <p>
-    You've clicked <span (click)="countClick()">this</span>
-    {{ clickCounter }} times.
-  </p>
-</div>
+  <div class="play-container">
+    <p>
+      You've clicked <span (click)="countClick()">this</span>
+      {{ clickCounter }} times.
+    </p>
+  </div>
 
-<div class="play-container" [ngClass]="setClasses()">
-  <p>
-    <input type="text" [(ngModel)]="name" /><br />
-    <strong>You said: </strong> {{ name }}
-  </p>
-</div>
+  <div class="play-container" [ngClass]="setClasses()">
+    <p>
+      <input type="text" [(ngModel)]="name" /><br />
+      <strong>You said: </strong> {{ name }}
+    </p>
+  </div>
 
-<div class="play-container" [ngClass]="setClasses()">
-  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
-    <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-  </ng-template>
-  <ng-template #none>
-    <p>The click counter is <strong>not greater</strong> than 4.</p>
-  </ng-template>
+  <div class="play-container" [ngClass]="setClasses()">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+      <p>The click counter <strong>IS GREATER</strong> than 4.</p>
+    </ng-template>
+    <ng-template #none>
+      <p>The click counter is <strong>not greater</strong> than 4.</p>
+    </ng-template>
+  </div>
 </div>

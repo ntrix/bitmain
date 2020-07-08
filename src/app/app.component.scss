@@ -199,7 +199,7 @@ $color2-d: #b290ff;
 .mode-toggle__circle {
   height: 1.4rem;
   width: 1.4rem;
-  background-color: $color2-d;
+  background-color: $color1;
   position: absolute;
   top: -0.1rem;
   border-radius: 50%;
@@ -209,12 +209,12 @@ $color2-d: #b290ff;
 }
 
 .mode-toggle__circle-checked {
-  background-color: $color2;
+  background-color: $color2-d;
   left: 1.4rem;
 }
 
 .mode-toggle__bg-checked {
-  background-color: $color2-d;
+  background-color: rgb(199, 0, 0);
 }
 
 .mode-toggle__text {

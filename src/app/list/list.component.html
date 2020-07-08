@@ -10,7 +10,7 @@
     </li>
   </ul>
 </div>
-<div class="container list-container">
+<div class="container list-container" [hidden]="!hidden">
   <h1>CryptoAPI: x{{ unitSymbol }}</h1>
   <ul *ngIf="brews">
     <li *ngFor="let brew of brews">
