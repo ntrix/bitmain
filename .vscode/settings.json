@@ -8,7 +8,11 @@
         "myapp",
         "naia",
         "notactive",
+        "signin",
         "signup",
+        "slidedown",
+        "slideright",
+        "slideup",
         "svgs"
     ]
 }
