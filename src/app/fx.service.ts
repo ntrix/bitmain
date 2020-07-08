@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FxService {
   fxURL: string =
-    'https://www.freeforexapi.com/api/live?pairs=EURUSD,EURGBP,USDJPY';
+    'https://www.freeforexapi.com/api/live?pairs=EURUSD,GBPUSD,AUDUSD,NZDUSD,USDCHF,USDJPY,USDCAD,EURGBP,USDSGD';
   proxyURL: string = 'https://cors-anywhere.herokuapp.com/';
 
   constructor(private http: HttpClient) {}
