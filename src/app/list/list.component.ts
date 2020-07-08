@@ -1,4 +1,4 @@
-import { HttpService } from './../http.service';
+import { CryptoService } from './../crypto.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ export class ListComponent implements OnInit {
   hidden: boolean = false;
   brews = [];
   unitSymbol: string = 'USD';
-  constructor(private _http: HttpService) {}
+  constructor(private _http: CryptoService) {}
 
   ngOnInit() {
     this._http.getBeer().subscribe((data) => {

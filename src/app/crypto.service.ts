@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class HttpService {
+export class CryptoService {
   bfxURL: string = 'https://api-pub.bitfinex.com/v2/tickers?symbols=ALL';
   proxyURL: string = 'https://cors-anywhere.herokuapp.com/';
 
