@@ -9,7 +9,10 @@
     [ngClass]="{ 'slide-menu-active': showMenu }"
     (click)="$event.stopImmediatePropagation()"
   >
-    <section class="menu-header">
+    <section
+      [ngClass]="{ 'menu-header-dark': darkModeActive }"
+      class="menu-header"
+    >
       <span class="greeting__text">Your Cockpit</span>
       <div class="symbol-image__container">
         <img src="" alt="symbol-image" class="symbol__image" />
@@ -23,9 +26,12 @@
       </div>
     </section>
 
-    <section class="menu-body menu-body-text">
+    <section
+      [ngClass]="{ 'menu-body-dark': darkModeActive }"
+      class="menu-body menu-body-text"
+    >
       <div class="menu-body-container">
-        <div><br /><a href="#" routerLink="/login">Your Wallets</a></div>
+        <div><a href="#" routerLink="/login">Your Wallets</a></div>
         <div><a href="#" routerLink="/crypto">Crypto accounts</a></div>
         <div><a href="#" routerLink="/trade">Forex accounts</a></div>
         <div>Quick Trade</div>

@@ -114,9 +114,9 @@ $color0: #f3f0f1;
   background: linear-gradient(to bottom, $color2, #fff);
 }
 .menu-body-container {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-size: bold;
-  margin-left: 2rem;
+  margin: 3rem;
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   a {
@@ -128,7 +128,7 @@ $color0: #f3f0f1;
 }
 
 .menu-body-dark {
-  background: linear-gradient(to top, #30cfd0 0%, #fff 100%);
+  background: linear-gradient(to bottom, #30cfd0 0%, #fff 100%);
 }
 
 .greeting__text {
