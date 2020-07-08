@@ -10,8 +10,6 @@ export class TradeComponent implements OnInit {
   hidden: boolean = false;
   key = [];
   val = [];
-  unitSymbol: string = 'USD';
-  name: string;
 
   constructor(private _http: FxService) {}
 
