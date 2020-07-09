@@ -20,7 +20,7 @@ export class TradeComponent implements OnInit {
       Object.values(temp).forEach((obj) => {
         this.val.push(Object.values(obj)[0]);
       });
+      if (data) this.hidden = true;
     });
-    if (this.val) this.hidden = true;
   }
 }
