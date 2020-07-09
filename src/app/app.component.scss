@@ -190,14 +190,14 @@ $color0: #f3f0f1;
   display: grid;
   grid-template-columns: 4fr 5.5fr 2.5fr;
   grid-template-rows: 1fr;
-  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  // box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   height: 4rem;
   margin: 0;
   align-items: center;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
   background: linear-gradient($color1, $color2);
-  color: $color3-d;
+  color: $color3;
 }
 
 .main__header-dark {
@@ -269,7 +269,6 @@ $color0: #f3f0f1;
 
 /*SVGs*/
 .hamburger__icon {
-  // background: url("../icons/menu-p.png");
   position: relative;
   z-index: 35;
   height: 1rem;
@@ -279,7 +278,6 @@ $color0: #f3f0f1;
 }
 
 .logo__icon {
-  // background: url("../icons/weenie.png");
   padding-left: 15rem;
 }
 
