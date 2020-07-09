@@ -14,7 +14,8 @@ export class BarchartComponent implements OnInit {
   type = 'CandlestickChart';
   options = {
     legend: 'none',
-    // bar: { groupWidth: '60%' }, // Remove space between bars.
+    // bar: { groupWidth: '80%' },
+    backgroundColor: { strokeWidth: 0, fill: '#adeae6' },
     candlestick: {
       fallingColor: { strokeWidth: 0, fill: '#a52714' }, // red
       risingColor: { strokeWidth: 0, fill: '#0f9d58' }, // green
