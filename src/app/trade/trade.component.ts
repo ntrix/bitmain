@@ -11,10 +11,12 @@ export class TradeComponent implements OnInit {
   key = [];
   val = [];
 
+  private sub: any;
+
   constructor(private _http: FxService) {}
 
   ngOnInit() {
-    this._http.getBeer().subscribe(async (data) => {
+    this.sub = this._http.getBeer().subscribe(async (data) => {
       let temp = await Object.values(data)[0];
       this.key = Object.keys(temp);
       Object.values(temp).forEach((obj) => {
@@ -22,5 +24,9 @@ export class TradeComponent implements OnInit {
       });
       if (data) this.hidden = true;
     });
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 }

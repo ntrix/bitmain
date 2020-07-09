@@ -11,10 +11,11 @@ export class CryptoComponent implements OnInit {
   datas = [];
   unitSymbol: string = 'USD';
 
+  private sub: any;
   constructor(private _http: CryptoService) {}
 
   ngOnInit() {
-    this._http.getCryptoAll().subscribe((data) => {
+    this.sub = this._http.getCryptoAll().subscribe((data) => {
       let maxSymbol = 9;
       Object.values(data).forEach((obj) => {
         if (maxSymbol && obj[0].slice(4, 7) == this.unitSymbol) {
@@ -29,5 +30,9 @@ export class CryptoComponent implements OnInit {
 
   vol(arg) {
     return (arg[7] * arg[8]) | 0; //return price*volume = volume in USD
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 }
