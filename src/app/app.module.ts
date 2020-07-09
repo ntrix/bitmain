@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TradeComponent } from './trade/trade.component';
 import { LoginComponent } from './login/login.component';
 import { BarchartComponent } from './chart/barchart/barchart.component';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BarchartComponent } from './chart/barchart/barchart.component';
     TradeComponent,
     LoginComponent,
     BarchartComponent,
+    GoogleChartsModule,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
