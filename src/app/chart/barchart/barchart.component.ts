@@ -26,16 +26,34 @@ export class BarchartComponent implements OnInit {
   d: any;
   datas = [];
   dummy = [
-    ['day', 9447, 9407, 9451, 9380],
-    ['day', 9267, 9447, 9497, 9256],
-    ['day', 9361, 9267, 9389, 9211],
-    ['day', 9089, 9361, 9389, 9075],
-    ['day', 9146, 9084, 9152, 8918],
-    ['day', 9073, 9147, 9204, 9060],
-    ['day', 9100, 9073, 9135, 9056],
-    ['day', 9239, 9100, 9266, 8950],
-    ['day', 9150, 9239, 9298, 9109],
-    ['day', 9194, 9150, 9206, 9077],
+    [' ', 9451, 9447, 9399, 9374],
+    [' ', 9497, 9267, 9447, 9256],
+    [' ', 9389, 9361, 9267, 9211],
+    [' ', 9389, 9089, 9361, 9075],
+    [' ', 9152, 9146, 9084, 8918],
+    [' ', 9204, 9073, 9147, 9060],
+    [' ', 9135, 9100, 9073, 9056],
+    [' ', 9266, 9239, 9100, 8950],
+    [' ', 9298, 9150, 9239, 9109],
+    [' ', 9206, 9194, 9150, 9077],
+    [' ', 9244, 9125, 9194, 9018],
+    [' ', 9193, 9014, 9125, 8946],
+    [' ', 9202, 9173, 9015, 8855],
+    [' ', 9299, 9257, 9173, 9054],
+    [' ', 9349, 9305, 9257, 9011],
+    [' ', 9684, 9635, 9312, 9212],
+    [' ', 9724, 9697, 9635, 9589],
+    [' ', 9795, 9299, 9697, 9285],
+    [' ', 9431, 9374, 9301, 9292],
+    [' ', 9406, 9313, 9371, 9178],
+    [' ', 9444, 9400, 9315, 9237],
+    [' ', 9496, 9473, 9400, 9285],
+    [' ', 9566, 9534, 9473, 9260],
+    [' ', 9590, 9434, 9534, 9388],
+    [' ', 9530, 9343, 9435, 8914],
+    [' ', 9486, 9480, 9344, 9262],
+    [' ', 9498, 9468, 9480, 9363],
+    [' ', 9544, 9277, 9468, 9246],
   ];
 
   constructor(private _http: CryptoService) {}
@@ -43,18 +61,14 @@ export class BarchartComponent implements OnInit {
   ngOnInit() {
     this.datas = [...this.dummy];
     this._http.getBTCHist().subscribe((dat) => {
-      console.log('dat', dat);
-      for (let count = 0; count < 9; count++) {
+      for (let count = 0; count < 28; count++) {
         let obj = dat[count];
-        console.log('obj', obj);
-        this.datas[count] = ['ABC', obj[3], obj[1], obj[2], obj[4]];
-        console.log('datas[count]', this.datas[count]);
+        this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
       if (this.datas) {
         this.hidden = true;
-        console.log('datas', this.datas);
       }
     });
-    this.d = new google.visualization.DataTable(this.datas, true);
+    new google.visualization.DataTable(this.datas, true);
   }
 }

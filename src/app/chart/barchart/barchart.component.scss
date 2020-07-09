@@ -5,6 +5,12 @@ $color3-d: #fff;
 $color1-d: #2e1d65;
 $color2-d: #b290ff;
 
+.place {
+  background: $color3;
+  background: url("../../../img/btcchart.jpg") center center;
+  width: 800px;
+  height: 400px;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -13,7 +19,7 @@ ul {
   flex-wrap: wrap;
 
   li {
-    background: linear-gradient(to bottom, $color2, #fff);
+    background: linear-gradient(to bottom, $color2, $color3);
     padding: 1rem;
     margin: 1rem;
     width: 20%;

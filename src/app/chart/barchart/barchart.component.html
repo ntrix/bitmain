@@ -1,4 +1,5 @@
-<div>
+<div class="place" [hidden]="hidden"></div>
+<div [hidden]="!hidden">
   <google-chart
     #chart
     [title]="title"
