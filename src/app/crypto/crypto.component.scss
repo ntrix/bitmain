@@ -5,6 +5,10 @@ $color3-d: #fff;
 $color1-d: #2e1d65;
 $color2-d: #b290ff;
 
+.card {
+  padding: 1.5rem;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -13,15 +17,26 @@ ul {
   flex-wrap: wrap;
 
   li {
-    background: linear-gradient(to bottom, $color2, #fff);
-    padding: 1rem;
-    margin: 1rem;
+    // background: linear-gradient(to bottom, $color2, #fff);
+    // padding: 1rem;
+    // margin: 1rem;
     width: 20%;
     height: 200px;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.1rem 0.3rem $color1-d;
+    // box-shadow: 0.1rem 0.3rem $color1-d;
+
+    background: #f3f0f1;
+    position: relative;
+    margin: 1rem 2rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+      6px 6px 10px rgba(0, 0, 0, 0.2);
 
     p,
     h1 {
@@ -32,14 +47,14 @@ ul {
 
     p.symbol {
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     p.price {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       flex-grow: 1;
     }
     p.volume {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
   }
 }

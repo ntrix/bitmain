@@ -13,13 +13,14 @@ ul {
   flex-wrap: wrap;
 
   li {
-    background: linear-gradient(to bottom, $color2, #fff);
+    background: linear-gradient(to bottom, #ccc, #fff);
     margin: 1rem;
     width: 20%;
     height: 200px;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
     box-shadow: 0.1rem 0.3rem $color1-d;
 
     p,

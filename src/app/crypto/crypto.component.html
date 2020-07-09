@@ -1,11 +1,10 @@
 <div class="container placeholder" [hidden]="hidden">
   <h1>CryptoAPI: Loading ...</h1>
   <ul>
-    <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <li *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]" class="card">
       <p class="symbol">SYMBOL</p>
-      <br />
       <p class="price">...</p>
-      <br />
+      <hr />
       Volume:
     </li>
   </ul>
@@ -13,11 +12,10 @@
 <div class="container" [hidden]="!hidden">
   <h1>CryptoAPI: x{{ unitSymbol }}</h1>
   <ul *ngIf="datas">
-    <li *ngFor="let dat of datas">
+    <li *ngFor="let dat of datas" class="card">
       <p class="symbol">{{ dat[0].slice(1) }}</p>
-      <br />
       <p class="price">{{ dat[7] | currency }}</p>
-      <br />
+      <hr />
       Volume:
       <p class="volume">{{ vol(dat) | currency }}</p>
     </li>
