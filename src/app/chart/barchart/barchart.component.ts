@@ -67,10 +67,10 @@ export class BarchartComponent implements OnInit {
         let obj = dat[count];
         this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
-      if (this.datas) {
-        this.hidden = true;
-      }
     });
+    if (this.datas) {
+      this.hidden = true;
+    }
     new google.visualization.DataTable(this.datas, true);
   }
 }
