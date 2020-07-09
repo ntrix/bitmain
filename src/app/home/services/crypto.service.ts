@@ -15,7 +15,8 @@ export class CryptoService {
   }
   getBTCHist() {
     return this.http.get(
-      this.proxyURL + this.bfxURL + 'candles/trade:1m:tBTCUSD/hist'
+      this.proxyURL + this.bfxURL + 'candles/trade:1D:tBTCUSD/hist?limit=10'
     );
   }
 }
+//https://api-pub.bitfinex.com/v2/candles/trade:1m:tBTCUSD/hist?limit=19&sort=1

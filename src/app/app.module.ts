@@ -20,9 +20,14 @@ import { GoogleChartsModule } from 'angular-google-charts';
     TradeComponent,
     LoginComponent,
     BarchartComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
     GoogleChartsModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
