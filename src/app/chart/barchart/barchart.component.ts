@@ -16,13 +16,14 @@ export class BarchartComponent implements OnInit {
     legend: 'none',
     // bar: { groupWidth: '80%' },
     backgroundColor: { strokeWidth: 0, fill: '#adeae6' },
+    chartArea: { left: 0, top: 5, width: '100%', height: '97%' },
     candlestick: {
       fallingColor: { strokeWidth: 0, fill: '#a52714' }, // red
       risingColor: { strokeWidth: 0, fill: '#0f9d58' }, // green
     },
   };
-  width = 800;
-  height = 400;
+  width = 600;
+  height = 250;
 
   d: any;
   datas = [];
