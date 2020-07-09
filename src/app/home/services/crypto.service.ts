@@ -5,12 +5,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CryptoService {
-  bfxURL: string = 'https://api-pub.bitfinex.com/v2/tickers?symbols=ALL';
+  bfxURL: string = 'https://api-pub.bitfinex.com/v2/';
   proxyURL: string = 'https://cors-anywhere.herokuapp.com/';
 
   constructor(private http: HttpClient) {}
 
-  getBeer() {
-    return this.http.get(this.proxyURL + this.bfxURL);
+  getCryptoAll() {
+    return this.http.get(this.proxyURL + this.bfxURL + 'tickers?symbols=ALL');
+  }
+  getBTCHist() {
+    return this.http.get(
+      this.proxyURL + this.bfxURL + 'candles/trade:1m:tBTCUSD/hist'
+    );
   }
 }

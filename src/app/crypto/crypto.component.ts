@@ -14,7 +14,7 @@ export class CryptoComponent implements OnInit {
   constructor(private _http: CryptoService) {}
 
   ngOnInit() {
-    this._http.getBeer().subscribe((data) => {
+    this._http.getCryptoAll().subscribe((data) => {
       let maxSymbol = 9;
       Object.values(data).forEach((obj) => {
         if (maxSymbol && obj[0].slice(4, 7) == this.unitSymbol) {

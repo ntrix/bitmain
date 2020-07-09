@@ -4,6 +4,7 @@
         "bitm",
         "bitma",
         "bitmania",
+        "btcusd",
         "datas",
         "minlength",
         "myapp",
@@ -14,6 +15,8 @@
         "slidedown",
         "slideright",
         "slideup",
-        "svgs"
+        "svgs",
+        "t",
+        "t btcusd"
     ]
 }
