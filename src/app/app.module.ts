@@ -9,6 +9,7 @@ import { CryptoComponent } from './crypto/crypto.component';
 import { FormsModule } from '@angular/forms';
 import { TradeComponent } from './trade/trade.component';
 import { LoginComponent } from './login/login.component';
+import { BarchartComponent } from './chart/barchart/barchart.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LoginComponent } from './login/login.component';
     CryptoComponent,
     TradeComponent,
     LoginComponent,
+    BarchartComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
