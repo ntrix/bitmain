@@ -62,9 +62,9 @@ export class BarchartComponent implements OnInit {
 
   ngOnInit() {
     this.datas = [...this.dummy];
-    this._http.getBTCHist().subscribe((dat) => {
+    this._http.getBTCHist().subscribe(async (dat) => {
       for (let count = 0; count < 28; count++) {
-        let obj = dat[count];
+        let obj = await dat[count];
         this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
     });
