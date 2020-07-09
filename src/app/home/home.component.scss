@@ -36,8 +36,6 @@ span {
   letter-spacing: 0.1rem;
 }
 
-// ******@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
 .welcome-container {
   width: 100%;
   height: 60%;
@@ -52,6 +50,11 @@ span {
     4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .btn-container {
   width: 100%;
   height: 100%;
@@ -59,89 +62,45 @@ span {
   justify-content: start;
   align-items: center;
   flex-direction: column;
+
   .btn-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .btn {
+    font-size: 2rem;
     width: 18rem;
-    height: 5em;
+    height: 4rem;
     background: #f3f0f1;
     position: relative;
-    margin: 0.5rem 1rem;
-    border-radius: 2rem;
-    padding-left: 1rem;
+    padding-top: 1rem;
+    margin: 1rem;
     text-align: center;
+    border-radius: 0.5rem 2rem;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+      6px 6px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    &:hover {
+      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+    }
   }
 
-  a {
-    line-height: 6rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
   .btn-primary {
-    border-radius: 10px 40px;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
-    color: #6f6cde;
-    a {
-      color: #6f6cde;
-    }
-    &:hover {
-      opacity: 0.9;
-      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-    }
-    &:active {
-      opacity: 0.9;
-      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-      color: #79e3b6;
-      a {
-        color: #79e3b6;
-      }
-    }
+    color: $color1;
   }
   .btn-disable {
-    border-radius: 10px 40px;
-    opacity: 0.3;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
-    color: #6f6cde;
-    a {
-      color: #6f6cde;
-    }
+    opacity: 0.4;
+    color: $color2-d;
   }
   .btn-secondary {
-    border-radius: 10px 40px;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
-    color: #79e3b6;
-    a {
-      color: #79e3b6;
-    }
-    &:hover {
-      opacity: 0.9;
-      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-    }
+    color: $color2;
   }
   .btn-warning {
-    border-radius: 10px 40px;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
-    color: red;
-    a {
-      color: red;
-    }
-    &:hover {
-      opacity: 1;
-      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-    }
+    color: #f44;
   }
 }
 @media screen and (max-width: 300px) {
