@@ -26,8 +26,7 @@ export class BarchartComponent implements OnInit {
   height = 250;
 
   d: any;
-  datas = [];
-  dummy = [
+  datas = [
     [' ', 9451, 9447, 9399, 9374],
     [' ', 9497, 9267, 9447, 9256],
     [' ', 9389, 9361, 9267, 9211],
@@ -63,17 +62,14 @@ export class BarchartComponent implements OnInit {
   constructor(private _http: CryptoService) {}
 
   ngOnInit() {
-    this.datas = [...this.dummy];
     this.sub = this._http.getBTCHist().subscribe(async (dat) => {
       for (let count = 0; count < 28; count++) {
         let obj = await dat[count];
         this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
     });
-    if (this.datas) {
-      this.hidden = true;
-    }
-    new google.visualization.DataTable(this.datas, true);
+    this.hidden = !!this.datas;
+    //new google.visualization.DataTable(this.datas, true);
   }
 
   ngOnDestroy() {
