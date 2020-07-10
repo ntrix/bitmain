@@ -1,13 +1,10 @@
-<div class="place" [hidden]="hidden"></div>
-<div [hidden]="!hidden">
-  <google-chart
-    #chart
-    [title]="title"
-    [type]="type"
-    [data]="datas"
-    [options]="options"
-    [width]="width"
-    [height]="height"
-  >
-  </google-chart>
-</div>
+<google-chart
+  #chart
+  [title]="title"
+  [type]="type"
+  [data]="datas"
+  [options]="options"
+  [width]="width"
+  [height]="height"
+>
+</google-chart>

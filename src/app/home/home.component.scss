@@ -45,7 +45,19 @@ span {
   flex-direction: column;
 }
 
-.welcome-shadow {
+.barchart-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.barchart {
+  background: url("../../img/btcchart.jpg") center center;
+  width: 600px;
+  height: 250px;
   box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.8),
     4px 4px 8px rgba(0, 0, 0, 0.2);
 }
