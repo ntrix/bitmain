@@ -17,30 +17,32 @@ ul {
     margin: 1rem;
     width: 20%;
     height: 200px;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.8),
       4px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
-    p,
-    h1 {
-      margin: 0;
-      font-weight: bold;
-      color: $color1-d;
-    }
-
-    p.symbol {
+    .symbol {
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
-    p.price {
-      font-size: 0.9rem;
+    .price {
+      font-size: 1.2rem;
       flex-grow: 1;
     }
-    p.volume {
-      font-size: 0.7rem;
+    .volume {
+      font-size: 1rem;
     }
   }
+}
+p {
+  margin: 0;
+}
+
+.container {
+  font-weight: bold;
+  color: $color1-d;
 }
