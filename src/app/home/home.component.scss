@@ -80,15 +80,15 @@ a {
     grid-template-columns: 1fr 1fr;
   }
   .btn {
-    font-size: 2rem;
-    width: 18rem;
-    height: 4rem;
+    font-size: 1.6rem;
+    width: 16rem;
+    height: 3rem;
     background: #f3f0f1;
     position: relative;
-    padding-top: 1rem;
-    margin: 1rem;
+    padding-top: 0.8rem;
+    margin: 0 1rem;
     text-align: center;
-    border-radius: 0.5rem 2rem;
+    border-radius: 1.6rem;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
