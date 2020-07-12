@@ -15,7 +15,7 @@ export class BarchartComponent implements OnInit {
   options = {
     legend: 'none',
     // bar: { groupWidth: '80%' },
-    backgroundColor: { strokeWidth: 0, fill: '#adeae6' },
+    backgroundColor: 'none', // { strokeWidth: 0, fill: '#adeae6' },
     chartArea: { left: 0, top: 5, width: '100%', height: '97%' },
     candlestick: {
       fallingColor: { strokeWidth: 0, fill: '#a52714' }, // red
