@@ -16,7 +16,7 @@ export class CryptoComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this._http.getCryptoAll().subscribe((data) => {
-      let maxSymbol = 9;
+      let maxSymbol = 8;
       Object.values(data).forEach((obj) => {
         if (maxSymbol && obj[0].slice(4, 7) == this.unitSymbol) {
           obj[8] = ~~obj[8];
