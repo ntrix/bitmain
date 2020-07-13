@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { BarchartComponent } from './chart/barchart/barchart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { ErrorComponent } from './shared/error/error.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     LoginComponent,
     BarchartComponent,
     LoadingComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
