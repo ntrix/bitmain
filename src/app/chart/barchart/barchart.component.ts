@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./barchart.component.scss'],
 })
 export class BarchartComponent implements OnInit {
-  hidden = false;
+  isLoaded = false;
   unitSymbol: string = 'USD';
 
   title = 'BTC Daily';
@@ -62,13 +62,14 @@ export class BarchartComponent implements OnInit {
   constructor(private _http: CryptoService) {}
 
   ngOnInit() {
+    this.isLoaded = false;
     this.sub = this._http.getBTCHist().subscribe(async (dat) => {
       for (let count = 0; count < 28; count++) {
         let obj = await dat[count];
         this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
+      this.isLoaded = await !!dat;
     });
-    this.hidden = !!this.datas;
     //new google.visualization.DataTable(this.datas, true);
   }
 
