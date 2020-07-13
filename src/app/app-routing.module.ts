@@ -1,3 +1,4 @@
+import { SignupComponent } from './signup/signup.component';
 import { TradeComponent } from './trade/trade.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +11,8 @@ const routes: Routes = [
   { path: 'crypto', component: CryptoComponent }, // Add this
   { path: 'trade', component: TradeComponent }, // Add this
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

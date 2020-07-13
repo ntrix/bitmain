@@ -15,6 +15,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { ErrorComponent } from './shared/error/error.component';
 import { AngularFireLite } from 'angularfire-lite';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,11 @@ import { AngularFireLite } from 'angularfire-lite';
     CryptoComponent,
     TradeComponent,
     LoginComponent,
+    SignupComponent,
     BarchartComponent,
     LoadingComponent,
     ErrorComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'bitmApp' }),
