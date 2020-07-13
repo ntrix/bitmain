@@ -26,6 +26,10 @@ export class FbService {
     return this.auth.signup(email, pass);
   }
 
+  signout() {
+    return this.auth.signout();
+  }
+
   getCities() {
     return this.auth.uid().pipe(
       switchMap((uid) => {
