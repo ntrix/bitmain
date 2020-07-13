@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment.prod';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ import { BarchartComponent } from './chart/barchart/barchart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { ErrorComponent } from './shared/error/error.component';
+import { AngularFireLite } from 'angularfire-lite';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,11 @@ import { ErrorComponent } from './shared/error/error.component';
     ErrorComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'bitmApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    AngularFireLite.forRoot(environment.config),
     GoogleChartsModule,
   ],
   providers: [],
