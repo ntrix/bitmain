@@ -188,7 +188,7 @@ $color0: #f3f0f1;
 .main__header {
   width: 100%;
   display: grid;
-  grid-template-columns: 4fr 5.5fr 2.5fr;
+  grid-template-columns: 200px 10fr 160px;
   grid-template-rows: 1fr;
   // box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   height: 4rem;
@@ -278,7 +278,8 @@ $color0: #f3f0f1;
 }
 
 .logo__icon {
-  padding-left: 15rem;
+  height: 2rem;
+  margin-left: 1rem;
 }
 
 .logo__text {
