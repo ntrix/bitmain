@@ -11,8 +11,8 @@ $color0: #f3f0f1;
 }
 
 .root__container {
-  width: 100vw;
-  height: 140vh;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.2fr auto;
@@ -343,5 +343,10 @@ $color0: #f3f0f1;
 @media only screen and (max-width: 300px) {
   .slide-menu {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .root__container {
+    width: 812px;
   }
 }
