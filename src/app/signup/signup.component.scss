@@ -13,15 +13,15 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  width: 85%;
-  min-height: 80vh;
+  width: 60%;
+  min-height: 50vh;
   animation: fadein 1s ease-in-out;
 }
 
 .signup-header {
-  position: absolute;
-  top: 5rem;
   font-size: 2.5rem;
+  display: block;
+  margin-bottom: 2rem;
   color: #0c1066;
   letter-spacing: 0.2rem;
   font-weight: bold;
@@ -54,8 +54,7 @@
   flex-flow: column;
   min-height: 100%;
   border-radius: 0 10px 10px 0;
-  background: url("https://source.unsplash.com/random/1200x900?mountain")
-    no-repeat center center;
+  background: url("../../img/singup.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -144,4 +143,10 @@
   text-decoration: none;
   color: #ff3a82;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 959px) {
+  .signup-aside {
+    display: none;
+  }
 }
