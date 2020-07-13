@@ -5,6 +5,14 @@ $color3-d: #fff;
 $color1-d: #2e1d65;
 $color2-d: #b290ff;
 
+.block-center {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
