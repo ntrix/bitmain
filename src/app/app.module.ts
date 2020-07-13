@@ -11,6 +11,7 @@ import { TradeComponent } from './trade/trade.component';
 import { LoginComponent } from './login/login.component';
 import { BarchartComponent } from './chart/barchart/barchart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
     TradeComponent,
     LoginComponent,
     BarchartComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
