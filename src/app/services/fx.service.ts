@@ -5,13 +5,16 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class FxService {
-  fxURL: string =
-    'https://www.freeforexapi.com/api/live?pairs=EURUSD,GBPUSD,AUDUSD,NZDUSD,USDCHF,USDJPY,USDCAD,USDVND,USDSGD';
-  proxyURL: string = 'https://cors-anywhere.herokuapp.com/';
+  
+  fxURL: string = '/api/config/rates'
+  baseURL: string = 'https://amazin-api-server.herokuapp.com'
+  // fxURL1: string = 'https://www.freeforexapi.com/api/live?pairs=EURUSD,GBPUSD,AUDUSD,NZDUSD,USDCHF,USDJPY,USDCAD,USDVND,USDSGD';
+  // proxyURL1: string = 'https://cors-anywhere.herokuapp.com/';
 
   constructor(private http: HttpClient) {}
 
-  getBeer() {
-    return this.http.get(this.proxyURL + this.fxURL);
+  getInfos() {
+    const res = this.http.get(this.baseURL + this.fxURL);
+    return res;
   }
 }

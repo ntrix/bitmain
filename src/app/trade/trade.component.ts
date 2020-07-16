@@ -8,19 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TradeComponent implements OnInit {
   hidden = false;
-  key = [];
+  key = ["GBP", "USD", "PLN", "CZK", "CHF", "AUD", "NZD", "CHF", "JPY", "CAD", "SGD", "VND"];
   val = [];
+  reversedVal = [];
 
   private sub: any;
 
   constructor(private _http: FxService) {}
 
   ngOnInit() {
-    this.sub = this._http.getBeer().subscribe(async (data) => {
-      let temp = await Object.values(data)[0];
-      this.key = Object.keys(temp);
-      Object.values(temp).forEach((obj) => {
-        this.val.push(Object.values(obj)[0]);
+    this.sub = this._http.getInfos().subscribe(async (data) => {
+      const {rates} = await Object.values(data)[0];
+      this.key.forEach((currency) => {
+        this.val.push(rates[currency]);
+        this.reversedVal.push((1/rates[currency]).toFixed(4));
       });
       if (data) this.hidden = true;
     });

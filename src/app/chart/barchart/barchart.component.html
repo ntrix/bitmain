@@ -1,13 +1,6 @@
 <ng-template [ngIf]="isLoaded" [ngIfElse]="loading">
-  <google-chart
-    #chart
-    [title]="title"
-    [type]="type"
-    [data]="datas"
-    [options]="options"
-    [width]="width"
-    [height]="height"
-  >
+  <google-chart #chart [title]="title" [type]="type" [data]="data" [options]="options" [width]="width"
+    [height]="height">
   </google-chart>
 </ng-template>
 
