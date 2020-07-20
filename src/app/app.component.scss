@@ -282,9 +282,12 @@ $color0: #f3f0f1;
 .logo__text a,
 .logo__text-dark a {
   color: $color3;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #030;
 }
-
+nav a:hover {
+  background-color: #fff2;
+  border-radius: 8px;
+}
 .hamburger__icon__fill {
   fill: $color3;
 }
