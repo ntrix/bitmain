@@ -1,5 +1,5 @@
 .main__container {
-  min-height: 90vh;
+  min-height: 100%;
   width: 90vw;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@
   flex-flow: column;
   min-height: 100%;
   border-radius: 0 10px 10px 0;
-  background: url("../../img/singup.jpg") no-repeat center center;
+  background: url("../../img/signup.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
 }
