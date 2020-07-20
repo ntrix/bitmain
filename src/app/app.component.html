@@ -15,7 +15,7 @@
     >
       <span class="greeting__text">Your Cockpit</span>
       <div class="symbol-image__container">
-        <img src="" alt="symbol-image" class="symbol__image" />
+        <img class="symbol__image" />
       </div>
       <div class="account-details">
         <div class="name__text">
@@ -39,12 +39,13 @@
     </section>
 
     <section class="menu-footer">
-      <span class="name__text">Contact</span>
+      <span class="name__text">Contact:</span>
       <br />
       <div class="account-details">
-        <p>Tien Nguyen</p>
-        <p>TIENguyen@TIENguyen.com</p>
-        <p>dev@tienguyen.com</p>
+        <div>Tien Nguyen</div>
+        <br />
+        <div>TIENguyen@TIENguyen.com</div>
+        <div>dev@tienguyen.com</div>
       </div>
     </section>
   </nav>
@@ -110,8 +111,8 @@
           <g
             data-v-423bf9ae=""
             id="d8e663a5-2471-4ade-9377-c0e57c77d207"
-            fill="orange"
-            stroke="#010"
+            fill="#fd8"
+            stroke="#020"
             stroke-width="1"
             stroke-opacity="0.7"
             transform="matrix(4.819276813107115,0,0,4.819276813107115,79.87014339938213,3.8192764463828723)"
@@ -146,7 +147,10 @@
     </div>
 
     <nav>
-      <ul [ngClass]="{ 'logo__text-dark': darkModeActive }" class="logo__text">
+      <ul
+        [ngClass]="{ 'logo__text-dark': darkModeActive }"
+        class="logo__text to-right"
+      >
         <li><a href="#" routerLink="/">HOME</a></li>
         <li><a href="#" routerLink="/crypto">CRYPTO</a></li>
         <li><a href="#" routerLink="/trade">FOREX</a></li>

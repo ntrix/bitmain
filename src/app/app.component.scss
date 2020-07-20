@@ -5,6 +5,7 @@ $color3-d: #000;
 $color1-d: #2e1d65;
 $color2-d: #b290ff;
 $color0: #f3f0f1;
+$color5: #fd8;
 
 .root__container {
   width: 100%;
@@ -90,16 +91,14 @@ $color0: #f3f0f1;
   // slide-menu-header #00ff9b, #5f84fb);
   background: linear-gradient(to right, $color2, $color1);
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr;
-
-  display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
   grid-template-areas: "greeting greeting" "image details";
   box-sizing: border-box;
   width: 100%;
   align-content: center;
-  color: $color3;
+  color: $color5;
+  text-shadow: 1px 1px #020;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
@@ -118,6 +117,8 @@ $color0: #f3f0f1;
   grid-template-rows: 25% 25% 25% 25%;
   a {
     text-decoration: none;
+    width: 100%;
+    padding: 5px;
     &:hover {
       color: $color3;
     }
@@ -171,7 +172,7 @@ $color0: #f3f0f1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color3;
+  background-color: $color5;
   background: url("../img/btc.png") no-repeat center center;
   align-self: center;
   margin-left: 2rem;
@@ -185,9 +186,7 @@ $color0: #f3f0f1;
 .main__header {
   width: 100%;
   display: grid;
-  grid-template-columns: 200px 10fr 160px;
-  grid-template-rows: 1fr;
-  // box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  grid-template-columns: 200px 57% 160px;
   height: 4rem;
   margin: 0;
   align-items: center;
@@ -196,7 +195,9 @@ $color0: #f3f0f1;
   background: linear-gradient($color1, $color2);
   color: $color3;
 }
-
+.to-right {
+  float: right;
+}
 .main__header-dark {
   background: linear-gradient($color1-d, $color2-d);
   color: $color3;
@@ -281,11 +282,11 @@ $color0: #f3f0f1;
 
 .logo__text a,
 .logo__text-dark a {
-  color: $color3;
-  text-shadow: 2px 2px #030;
+  color: $color5;
+  text-shadow: 2px 2px #020;
 }
 nav a:hover {
-  background-color: #fff2;
+  background-color: #fff4;
   border-radius: 8px;
 }
 .hamburger__icon__fill {
