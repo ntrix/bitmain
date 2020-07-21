@@ -14,7 +14,7 @@ body {
 }
 
 .wrap {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -23,16 +23,13 @@ header {
   padding: 1em 0;
 
   a {
-    // color: $color1-d;
     text-decoration: none;
     font-weight: bold;
   }
-  // a.logo {
-  // }
 
   nav {
-    // float: right;
-
+    margin-right: 0.5rem;
+    float: right;
     ul {
       list-style-type: none;
       margin: 0;
@@ -42,7 +39,7 @@ header {
         padding: 1.2em;
 
         &:hover {
-          border-bottom: thin solid $color1-d;
+          border-bottom: 2px solid $color1-d;
         }
       }
     }

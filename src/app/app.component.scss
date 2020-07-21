@@ -102,7 +102,7 @@ $color5: #fd8;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
-.menu-header-dark {
+.menu-header--dark {
   background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
@@ -125,7 +125,7 @@ $color5: #fd8;
   }
 }
 
-.menu-body-dark {
+.menu-body--dark {
   background: linear-gradient(to bottom, #30cfd0 0%, #fff 100%);
 }
 
@@ -198,7 +198,7 @@ $color5: #fd8;
 .to-right {
   float: right;
 }
-.main__header-dark {
+.main__header--dark {
   background: linear-gradient($color1-d, $color2-d);
   color: $color3;
 }
@@ -280,8 +280,8 @@ $color5: #fd8;
   margin-left: 1rem;
 }
 
-.logo__text a,
-.logo__text-dark a {
+.main-menu a,
+.main-menu--dark a {
   color: $color5;
   text-shadow: 2px 2px #020;
 }
@@ -311,7 +311,7 @@ nav a:hover {
   transition: opacity 300ms linear;
 }
 
-.main__wrap__bg-dark {
+.main__wrap__bg--dark {
   opacity: 1;
   background: linear-gradient(to bottom, $color2-d, $color1-d);
   transition: opacity 300ms linear;

@@ -10,7 +10,7 @@
     (click)="$event.stopImmediatePropagation()"
   >
     <section
-      [ngClass]="{ 'menu-header-dark': darkModeActive }"
+      [ngClass]="{ 'menu-header--dark': darkModeActive }"
       class="menu-header"
     >
       <span class="greeting__text">Your Cockpit</span>
@@ -27,7 +27,7 @@
     </section>
 
     <section
-      [ngClass]="{ 'menu-body-dark': darkModeActive }"
+      [ngClass]="{ 'menu-body--dark': darkModeActive }"
       class="menu-body menu-body-text"
     >
       <div class="menu-body__wrap">
@@ -53,7 +53,7 @@
 
 <div class="root__wrap">
   <header
-    [ngClass]="{ 'main__header-dark': darkModeActive }"
+    [ngClass]="{ 'main__header--dark': darkModeActive }"
     class="main__header"
   >
     <div class="left__section">
@@ -147,10 +147,7 @@
     </div>
 
     <nav>
-      <ul
-        [ngClass]="{ 'logo__text-dark': darkModeActive }"
-        class="logo__text to-right"
-      >
+      <ul [ngClass]="{ 'main-menu--dark': darkModeActive }" class="main-menu">
         <li><a href="#" routerLink="/">HOME</a></li>
         <li><a href="#" routerLink="/crypto">CRYPTO</a></li>
         <li><a href="#" routerLink="/trade">FOREX</a></li>
@@ -187,7 +184,7 @@
   <main class="main__wrap">
     <div
       class="main__wrap__bg"
-      [ngClass]="{ 'main__wrap__bg-dark': darkModeActive }"
+      [ngClass]="{ 'main__wrap__bg--dark': darkModeActive }"
     ></div>
     <router-outlet></router-outlet>
   </main>
