@@ -41,6 +41,7 @@ a {
 .col-2 {
   display: grid;
   grid-template-columns: 50% 50%;
+  column-gap: 1rem;
 }
 
 .btn__wrap {
@@ -58,7 +59,6 @@ a {
     background: #f3f0f1;
     position: relative;
     padding-top: 0.8rem;
-    margin: 0 1rem;
     text-align: center;
     border-radius: 1.6rem;
     cursor: pointer;
@@ -84,5 +84,14 @@ a {
   }
   .warning {
     color: #f44;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .col-2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    row-gap: 1rem;
   }
 }

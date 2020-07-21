@@ -9,6 +9,7 @@ $color5: #fd8;
 
 .root__wrap {
   width: 100%;
+  min-width: 568px;
   min-height: 100vh;
   display: grid;
   grid-template-columns: auto;
@@ -195,9 +196,7 @@ $color5: #fd8;
   background: linear-gradient($color1, $color2);
   color: $color3;
 }
-.to-right {
-  float: right;
-}
+
 .main__header--dark {
   background: linear-gradient($color1-d, $color2-d);
   color: $color3;
@@ -334,14 +333,25 @@ nav a:hover {
   letter-spacing: 0.1rem;
   color: $color3;
 }
+@media only screen and (max-width: 750px) {
+  nav {
+    font-size: 13px;
+    li a {
+      padding: 0.5rem;
+    }
+  }
+  .main__header {
+    grid-template-columns: 160px 44% 140px;
+    height: 2.5rem;
+  }
+}
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .slide-menu {
     width: 100%;
   }
-}
-@media only screen and (max-width: 782px) {
-  .root__wrap {
-    width: 812px;
+  .main__header {
+    grid-template-columns: 0 300px 140px;
+    height: 2rem;
   }
 }

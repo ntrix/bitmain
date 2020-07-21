@@ -1,18 +1,16 @@
-<div class="block-center">
-  <ng-template [ngIf]="isLoaded" [ngIfElse]="loading">
-    <google-chart
-      #chart
-      [title]="title"
-      [type]="type"
-      [data]="datas"
-      [options]="options"
-      [width]="width"
-      [height]="height"
-    >
-    </google-chart>
-  </ng-template>
+<ng-template [ngIf]="isLoaded" [ngIfElse]="loading">
+  <google-chart
+    #chart
+    [title]="title"
+    [type]="type"
+    [data]="datas"
+    [options]="options"
+    [width]="width"
+    [height]="height"
+  >
+  </google-chart>
+</ng-template>
 
-  <ng-template #loading>
-    <app-loading></app-loading>
-  </ng-template>
-</div>
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>
