@@ -13,6 +13,15 @@ $color2-d: #b290ff;
   align-items: center;
 }
 
+.wrap {
+  font-weight: bold;
+  color: $color1-d;
+  h2 {
+    text-align: center;
+    text-shadow: 1px 2px $color3;
+  }
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -44,9 +53,4 @@ ul {
 }
 p {
   margin: 0;
-}
-
-.wrap {
-  font-weight: bold;
-  color: $color1-d;
 }
