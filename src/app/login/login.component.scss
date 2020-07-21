@@ -1,3 +1,11 @@
+$color3: #fff;
+$color1: #5f84fb;
+$color2: #00ff9b;
+$color3-d: #000;
+$color1-d: #2e1d65;
+$color2-d: #b290ff;
+$color0: #f3f0f1;
+
 .main__wrap {
   min-height: 100%;
   width: 90vw;
@@ -19,7 +27,7 @@
 .login-card {
   position: relative;
   display: flex;
-  background-color: #ffffff;
+  background-color: $color3;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 60%;
@@ -31,7 +39,7 @@
   font-size: 2.5rem;
   display: block;
   margin-bottom: 2rem;
-  color: #0c1066;
+  color: $color1-d;
   letter-spacing: 0.2rem;
   font-weight: bold;
   animation: fadein 1.75s ease-in-out;
@@ -63,7 +71,7 @@
   flex-flow: column;
   min-height: 100%;
   border-radius: 0 10px 10px 0;
-  background: url("../../img/money.jpg") no-repeat center center;
+  background: url("../../img/login.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -83,7 +91,7 @@
   width: 8rem;
   border: none;
   outline: none;
-  background-color: white;
+  background-color: $color3;
   position: relative;
   z-index: 5;
   margin: 0 0 8rem 3rem;
@@ -91,7 +99,7 @@
 }
 
 .login-welcome-text {
-  color: white;
+  color: $color3;
   letter-spacing: 0.03rem;
   margin: 0 0 2rem 3rem;
   font-size: 2.75rem;
@@ -111,12 +119,12 @@
 }
 
 .login-btn {
-  background-color: #00ff9b;
+  background-color: $color2;
   padding: 1rem;
   border-radius: 2rem;
   outline: none;
   border: none;
-  color: white;
+  color: $color3;
   font-size: 1.1rem;
   cursor: pointer;
   margin-top: 1.5rem;
@@ -125,20 +133,20 @@
 }
 
 .login-btn:hover {
-  background: linear-gradient(to right, #03a9f4, #00ff9b);
+  background: linear-gradient(to right, $color1, $color2);
 }
 
 .login-input::placeholder {
-  color: #39437a;
+  color: $color2-d;
   font-size: 0.9rem;
 }
 
 .btn-disabled {
-  background-color: lightgray;
+  background-color: #ccc;
 }
 
 .btn-disabled:hover {
-  background: lightgray;
+  background: #ddd;
 }
 
 .signup-link__wrap {
