@@ -1,4 +1,4 @@
-.main__container {
+.main__wrap {
   min-height: 100%;
   width: 90vw;
   display: flex;
@@ -132,7 +132,7 @@
   background: lightgray;
 }
 
-.signup-link-wrapper {
+.signup-link__wrap {
   margin-top: 3rem;
   animation: slideup 1s ease-in-out;
 }

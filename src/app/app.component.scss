@@ -7,7 +7,7 @@ $color2-d: #b290ff;
 $color0: #f3f0f1;
 $color5: #fd8;
 
-.root__container {
+.root__wrap {
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -28,7 +28,7 @@ $color5: #fd8;
     Slide Menu
 = = = = = = = = =
 */
-.side-menu__container {
+.side-menu__wrap {
   position: fixed;
   left: 0;
   top: 0;
@@ -40,11 +40,11 @@ $color5: #fd8;
   user-select: none;
 }
 
-.side-menu__container-active {
+.side-menu__wrap-active {
   pointer-events: auto;
 }
 
-.side-menu__container::before {
+.side-menu__wrap::before {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -59,7 +59,7 @@ $color5: #fd8;
   will-change: opacity;
 }
 
-.side-menu__container-active::before {
+.side-menu__wrap-active:before {
   opacity: 0.3;
 }
 
@@ -109,7 +109,7 @@ $color5: #fd8;
 .menu-body {
   background: linear-gradient(to bottom, $color2, #fff);
 }
-.menu-body-container {
+.menu-body__wrap {
   font-size: 1.6rem;
   font-size: bold;
   margin: 3rem;
@@ -162,7 +162,7 @@ $color5: #fd8;
   width: 100%;
 }
 
-.symbol-image__container {
+.symbol-image__wrap {
   grid-area: image;
   margin-right: 0.5rem;
   border-radius: 50%;
@@ -203,7 +203,7 @@ $color5: #fd8;
   color: $color3;
 }
 
-.toggle-button__container {
+.toggle-button__wrap {
   cursor: pointer;
   position: relative;
   margin: 0 0.5rem;
@@ -299,7 +299,7 @@ nav a:hover {
 ================
 */
 
-.main-container__bg {
+.main__wrap__bg {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -311,7 +311,7 @@ nav a:hover {
   transition: opacity 300ms linear;
 }
 
-.main-container__bg-dark {
+.main__wrap__bg-dark {
   opacity: 1;
   background: linear-gradient(to bottom, $color2-d, $color1-d);
   transition: opacity 300ms linear;
@@ -341,7 +341,7 @@ nav a:hover {
   }
 }
 @media only screen and (max-width: 782px) {
-  .root__container {
+  .root__wrap {
     width: 812px;
   }
 }

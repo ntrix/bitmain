@@ -1,4 +1,4 @@
-<div class="container" [hidden]="hidden">
+<div class="wrap" [hidden]="hidden">
   <h2>Forex API: Loading ...</h2>
   <ul>
     <li *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]">
@@ -7,11 +7,11 @@
   </ul>
 </div>
 
-<div class="container" [hidden]="!hidden">
+<div class="wrap" [hidden]="!hidden">
   <h2>Forex symbols: xUSD USDx</h2>
   <ul *ngIf="val">
     <li *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]">
-      <div class="container">
+      <div class="wrap">
         <br />
         <p class="symbol">{{ key[i] }}</p>
         <br />

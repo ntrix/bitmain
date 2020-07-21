@@ -19,7 +19,7 @@ span {
   line-height: 0.8rem;
 }
 
-.welcome-container {
+.welcome__wrap {
   margin: 0 auto;
   display: grid;
   grid-template-rows: 110px 250px 220px;
@@ -29,7 +29,7 @@ span {
   color: $color1-d;
 }
 
-.barchart-container {
+.barchart__wrap {
   margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ a {
   grid-template-columns: 50% 50%;
 }
 
-.btn-container {
+.btn__wrap {
   width: 100%;
   height: 100%;
   display: flex;

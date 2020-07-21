@@ -1,7 +1,7 @@
 <!-- Slide Menu-->
 <aside
-  class="side-menu__container"
-  [ngClass]="{ 'side-menu__container-active': showMenu }"
+  class="side-menu__wrap"
+  [ngClass]="{ 'side-menu__wrap-active': showMenu }"
   (click)="toggleMenu()"
 >
   <nav
@@ -14,7 +14,7 @@
       class="menu-header"
     >
       <span class="greeting__text">Your Cockpit</span>
-      <div class="symbol-image__container">
+      <div class="symbol-image__wrap">
         <img class="symbol__image" />
       </div>
       <div class="account-details">
@@ -30,7 +30,7 @@
       [ngClass]="{ 'menu-body-dark': darkModeActive }"
       class="menu-body menu-body-text"
     >
-      <div class="menu-body-container">
+      <div class="menu-body__wrap">
         <div><a href="#" routerLink="/login">Your Wallets</a></div>
         <div><a href="#" routerLink="/crypto">Crypto accounts</a></div>
         <div><a href="#" routerLink="/trade">Forex accounts</a></div>
@@ -51,7 +51,7 @@
   </nav>
 </aside>
 
-<div class="root__container">
+<div class="root__wrap">
   <header
     [ngClass]="{ 'main__header-dark': darkModeActive }"
     class="main__header"
@@ -158,10 +158,10 @@
       </ul>
     </nav>
 
-    <div class="mode-toggle__container">
+    <div class="mode-toggle__wrap">
       <span class="mode-toggle__text">Light</span>
 
-      <label class="toggle-button__container">
+      <label class="toggle-button__wrap">
         <input
           (click)="modeToggleSwitch()"
           type="checkbox"
@@ -184,10 +184,10 @@
   <!-- Main Content -->
 
   <!--<router-outlet></router-outlet>-->
-  <main class="main__container">
+  <main class="main__wrap">
     <div
-      class="main-container__bg"
-      [ngClass]="{ 'main-container__bg-dark': darkModeActive }"
+      class="main__wrap__bg"
+      [ngClass]="{ 'main__wrap__bg-dark': darkModeActive }"
     ></div>
     <router-outlet></router-outlet>
   </main>

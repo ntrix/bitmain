@@ -1,4 +1,4 @@
-.error-wrapper {
+.error__wrap {
   position: fixed;
   left: 50%;
   bottom: 0;
@@ -16,7 +16,7 @@
   z-index: 999;
 }
 
-.error-wrapper-active {
+.error__wrap-active {
   transform: translate(-50%, 0);
 }
 
