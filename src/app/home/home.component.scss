@@ -13,58 +13,34 @@ span {
   cursor: pointer;
 }
 
-.play-container {
-  padding: 3em;
-  border: 1px solid lightgray;
-  margin-bottom: 1em;
-
-  input {
-    padding: 1em;
-    margin-bottom: 2em;
-  }
-}
-.active {
-  background-color: yellow;
-  border: 4px solid black;
-}
-.notactive {
-  background-color: lightgray;
-}
-
-.welcome__text {
+.welcome {
   text-align: center;
-  letter-spacing: 0.1rem;
+  text-shadow: 1px 2px #fff;
+  line-height: 0.8rem;
 }
 
 .welcome-container {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: start;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 110px 250px 220px;
   align-items: center;
-  flex-direction: column;
+  position: relative;
+  font-weight: bold;
+  color: $color1-d;
 }
 
 .barchart-container {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-}
-
-.barchart {
-  width: 600px;
-  height: 250px;
-  // background: url("../../img/btcchart_cyan.jpg") center center;
-  // box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.8),
-  //   4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 a {
   font-weight: bold;
   text-decoration: none;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .btn-container {
@@ -75,10 +51,6 @@ a {
   align-items: center;
   flex-direction: column;
 
-  .btn-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .btn {
     font-size: 1.6rem;
     width: 16rem;
@@ -100,29 +72,17 @@ a {
       opacity: 1;
     }
   }
-
-  .btn-primary {
+  .primary {
     color: $color1;
   }
-  .btn-disable {
+  .disable {
     opacity: 0.4;
     color: $color2-d;
   }
-  .btn-secondary {
+  .secondary {
     color: $color2;
   }
-  .btn-warning {
+  .warning {
     color: #f44;
-  }
-}
-
-.container {
-  font-weight: bold;
-  color: $color1-d;
-}
-
-@media screen and (max-width: 300px) {
-  .welcome-shadow {
-    display: none;
   }
 }
