@@ -16,13 +16,18 @@ export class BarchartComponent implements OnInit {
     legend: 'none',
     // bar: { groupWidth: '80%' },
     backgroundColor: 'none', // { strokeWidth: 0, fill: '#adeae6' },
+    vAxis: {
+      gridlines: {
+        color: 'transparent',
+      },
+    },
     chartArea: { left: 0, top: 5, width: '100%', height: '97%' },
     candlestick: {
-      fallingColor: { strokeWidth: 0, fill: '#a52714' }, // red
-      risingColor: { strokeWidth: 0, fill: '#0f9d58' }, // green
+      fallingColor: { strokeWidth: 0, fill: '#a44' }, // red
+      risingColor: { strokeWidth: 0, fill: '#096' }, // green
     },
   };
-  width = '100%';
+  width = 560;
   height = 250;
 
   d: any;
@@ -55,6 +60,21 @@ export class BarchartComponent implements OnInit {
     [' ', 9486, 9480, 9344, 9262],
     [' ', 9498, 9468, 9480, 9363],
     [' ', 9544, 9277, 9468, 9246],
+    [' ', 9451, 9447, 9399, 9374],
+    [' ', 9497, 9267, 9447, 9256],
+    [' ', 9389, 9361, 9267, 9211],
+    [' ', 9389, 9089, 9361, 9075],
+    [' ', 9152, 9146, 9084, 8918],
+    [' ', 9204, 9073, 9147, 9060],
+    [' ', 9135, 9100, 9073, 9056],
+    [' ', 9266, 9239, 9100, 8950],
+    [' ', 9298, 9150, 9239, 9109],
+    [' ', 9206, 9194, 9150, 9077],
+    [' ', 9244, 9125, 9194, 9018],
+    [' ', 9193, 9014, 9125, 8946],
+    [' ', 9202, 9173, 9015, 8855],
+    [' ', 9299, 9257, 9173, 9054],
+    [' ', 9349, 9305, 9257, 9011],
   ];
 
   private sub: any;
@@ -64,13 +84,13 @@ export class BarchartComponent implements OnInit {
   ngOnInit() {
     this.isLoaded = false;
     this.sub = this._http.getBTCHist().subscribe(async (dat) => {
-      for (let count = 0; count < 28; count++) {
+      for (let count = 0; count < 43; count++) {
         let obj = await dat[count];
-        this.datas[count] = [' ', obj[3], obj[1], obj[2], obj[4]];
+        this.datas[42 - count] = [' ', obj[3], obj[1], obj[2], obj[4]];
       }
       this.isLoaded = await !!dat;
     });
-    //new google.visualization.DataTable(this.datas, true);
+    setTimeout(() => (this.isLoaded = true), 5000);
   }
 
   ngOnDestroy() {
