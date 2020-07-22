@@ -59,3 +59,17 @@ ul {
 p {
   margin: 0;
 }
+
+@media only screen and (max-width: 520px) {
+  ul li {
+    .symbol {
+      font-size: 0.8rem;
+    }
+    .price {
+      font-size: 0.7rem;
+    }
+    .volume {
+      font-size: 0.6rem;
+    }
+  }
+}

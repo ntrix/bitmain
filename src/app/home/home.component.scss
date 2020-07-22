@@ -31,6 +31,12 @@ span {
 
 .barchart__wrap {
   margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 a {
@@ -93,5 +99,13 @@ a {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     row-gap: 1rem;
+  }
+  .barchart__wrap {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .barchart__wrap {
+    width: 290px;
   }
 }

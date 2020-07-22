@@ -9,7 +9,7 @@ $color5: #fd8;
 
 .root__wrap {
   width: 100%;
-  min-width: 568px;
+  min-width: 320px;
   min-height: 100vh;
   display: grid;
   grid-template-columns: auto;
@@ -99,7 +99,7 @@ $color5: #fd8;
   width: 100%;
   align-content: center;
   color: $color5;
-  text-shadow: 1px 1px #020;
+  text-shadow: 1px 2px #020;
 }
 
 .menu-header--dark {
@@ -188,7 +188,7 @@ $color5: #fd8;
   display: grid;
   grid-template-columns: 200px 60% 120px;
   height: 3rem;
-  margin: 0;
+  margin: 0 0.5rem 0 0;
   align-items: center;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
@@ -294,7 +294,7 @@ $color5: #fd8;
 .main-menu a,
 .main-menu--dark a {
   color: $color5;
-  text-shadow: 2px 2px #020;
+  text-shadow: 1px 2px #020;
 }
 nav a:hover {
   background-color: #fff4;

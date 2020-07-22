@@ -14,8 +14,11 @@
       <p class="symbol">{{ dat[0].slice(1) }}</p>
       <p class="price">{{ dat[7] | currency }}</p>
       <hr />
-      Volume:
-      <p class="volume">{{ vol(dat) }}</p>
+      <p class="volume">
+        Volume:
+        <br />
+        {{ vol(dat) }}
+      </p>
     </li>
   </ul>
 </div>
