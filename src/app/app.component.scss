@@ -264,8 +264,7 @@ $color5: #fd8;
 /*Content*/
 .left__section {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   max-width: 15rem;
 }
 
@@ -357,7 +356,7 @@ nav a:hover {
     }
   }
   .main__header {
-    grid-template-columns: 160px 58% 120px;
+    grid-template-columns: 160px 56% 120px;
     height: 2.5rem;
   }
   .main__wrap {
@@ -366,9 +365,9 @@ nav a:hover {
 }
 @media only screen and (max-width: 520px) {
   nav {
-    font-size: 14px;
+    font-size: 15px;
     li a {
-      padding: 1rem 0.4rem;
+      padding: 1rem 0.6rem;
     }
   }
   .logo__text {
@@ -380,11 +379,11 @@ nav a:hover {
     font-size: 13px;
     letter-spacing: 0;
     li a {
-      padding: 0.8rem 0.3rem;
+      padding: 0.8rem 0.25rem;
     }
   }
   .main__header {
-    grid-template-columns: 0 266px 50px;
+    grid-template-columns: 0 264px 50px;
     height: 2rem;
   }
   .main__wrap {
