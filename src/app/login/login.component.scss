@@ -7,9 +7,10 @@ $color2-d: #b290ff;
 $color0: #f3f0f1;
 
 .main__wrap {
+  margin-top: 2rem;
   min-height: 100%;
   width: 90vw;
-  min-width: 400px;
+  min-width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +59,7 @@ $color0: #f3f0f1;
 .login-form {
   display: flex;
   flex-flow: column;
-  width: 80%;
+  width: 84%;
   align-items: center;
   animation: slidedown 2s ease-in-out;
 }
@@ -164,6 +165,27 @@ $color0: #f3f0f1;
 }
 
 @media screen and (max-width: 959px) {
+  .login-card {
+    width: 72%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .login-card {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 666px) {
+  .login-card {
+    width: 72%;
+  }
+  .login-aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 374px) {
+  .login-card {
+    width: 88%;
+  }
   .login-aside {
     display: none;
   }
