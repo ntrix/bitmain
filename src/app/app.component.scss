@@ -68,17 +68,17 @@ $color5: #fd8;
   box-sizing: border-box;
   transform: translateX(-103%);
   position: relative;
+  padding-top: 3.8rem;
   top: 0;
   left: 0;
   z-index: 10;
   height: 100%;
-  width: 90%;
+  width: 80%;
   max-width: 26rem;
   background-color: $color3;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 4fr 1fr;
+  grid-template-rows: 2.8fr 4fr 0.8fr;
   grid-gap: 1rem;
   transition: transform 300ms linear;
   will-change: transform;
@@ -92,15 +92,14 @@ $color5: #fd8;
   // slide-menu-header #00ff9b, #5f84fb);
   background: linear-gradient(to right, $color2, $color1);
   display: grid;
-  grid-template-rows: 1fr 4fr;
-  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: "greeting greeting" "image details";
   box-sizing: border-box;
   width: 100%;
   align-content: center;
   color: $color5;
   text-shadow: 1px 1px #020;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
 .menu-header--dark {
@@ -187,14 +186,16 @@ $color5: #fd8;
 .main__header {
   width: 100%;
   display: grid;
-  grid-template-columns: 200px 57% 160px;
-  height: 4rem;
+  grid-template-columns: 200px 60% 120px;
+  height: 3rem;
   margin: 0;
   align-items: center;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
   background: linear-gradient($color1, $color2);
   color: $color3;
+  position: fixed;
+  z-index: 199;
 }
 
 .main__header--dark {
@@ -205,38 +206,49 @@ $color5: #fd8;
 .toggle-button__wrap {
   cursor: pointer;
   position: relative;
-  margin: 0 0.5rem;
+  margin: 0;
+}
+
+.mode-toggle__wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .mode-toggle__input {
+  -ms-appearance: none;
+  -o-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: transparent;
+  background-color: transparent;
+  border: 0;
 }
 
 .mode-toggle__bg {
-  height: 1rem;
-  width: 2rem;
-  border-radius: 0.5rem;
+  height: 14px;
+  width: 35px;
+  border-radius: 6px;
   background-color: rgb(155, 245, 155);
   display: inline-block;
   transition: background-color 300ms linear;
+  margin: 0 6px;
 }
 
 .mode-toggle__circle {
-  height: 1.4rem;
-  width: 1.4rem;
+  height: 20px;
+  width: 20px;
   background-color: $color0;
   position: absolute;
-  top: -0.1rem;
+  margin: 0;
+  left: 2px;
   border-radius: 50%;
-  box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
   transition: left 300ms linear;
-  left: -0.1rem;
 }
 
 .mode-toggle__circle-checked {
   background-color: $color0;
-  left: 1.4rem;
+  left: 32px;
 }
 
 .mode-toggle__bg-checked {
@@ -244,9 +256,9 @@ $color5: #fd8;
 }
 
 .mode-toggle__text {
-  font-size: 0.7rem;
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
 }
 
 /*Content*/
@@ -316,6 +328,10 @@ nav a:hover {
   transition: opacity 300ms linear;
 }
 
+.main__wrap {
+  margin-top: 5.6rem;
+}
+
 /*
 ================-
     Footer
@@ -341,17 +357,27 @@ nav a:hover {
     }
   }
   .main__header {
-    grid-template-columns: 160px 44% 140px;
+    grid-template-columns: 160px 48% 120px;
     height: 2.5rem;
   }
+  .main__wrap {
+    margin-top: 4.5rem;
+  }
 }
-
+@media only screen and (max-width: 520px) {
+  .logo__text {
+    display: none;
+  }
+}
 @media only screen and (max-width: 400px) {
   .slide-menu {
     width: 100%;
   }
   .main__header {
-    grid-template-columns: 0 300px 140px;
+    grid-template-columns: 0 300px 120px;
     height: 2rem;
+  }
+  .main__wrap {
+    margin-top: 3.8rem;
   }
 }
