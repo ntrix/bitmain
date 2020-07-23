@@ -42,6 +42,9 @@ header {
           border-bottom: 1px solid $color1-d;
         }
       }
+      li:hover {
+        transform: translate(1px, 1px);
+      }
     }
   }
 }

@@ -32,8 +32,9 @@ ul {
   li {
     background: #f3f0f1;
     margin: 1rem;
-    width: 20%;
     height: 200px;
+    width: 20%;
+    min-width: 120px;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -61,15 +62,17 @@ p {
 }
 
 @media only screen and (max-width: 520px) {
-  ul li {
-    .symbol {
-      font-size: 0.8rem;
-    }
-    .price {
-      font-size: 0.7rem;
-    }
-    .volume {
-      font-size: 0.6rem;
+  ul {
+    li {
+      .symbol {
+        font-size: 1.2rem;
+      }
+      .price {
+        font-size: 0.9rem;
+      }
+      .volume {
+        font-size: 0.8rem;
+      }
     }
   }
 }

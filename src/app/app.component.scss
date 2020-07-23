@@ -297,7 +297,7 @@ $color5: #fd8;
 }
 nav a:hover {
   background-color: #fff4;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 .hamburger__icon__fill {
   fill: $color3;
@@ -367,7 +367,7 @@ nav a:hover {
   nav {
     font-size: 15px;
     li a {
-      padding: 1rem 0.6rem;
+      padding: 0.9rem 0.6rem;
     }
   }
   .logo__text {
@@ -375,19 +375,26 @@ nav a:hover {
   }
 }
 @media only screen and (max-width: 400px) {
+  .hamburger__icon {
+    padding: 0.4rem 0.5rem;
+  }
   nav {
     font-size: 13px;
     letter-spacing: 0;
     li a {
-      padding: 0.8rem 0.25rem;
+      padding: 1.5rem 0.55rem 0.4rem 0.3rem;
     }
   }
   .main__header {
-    grid-template-columns: 0 264px 50px;
-    height: 2rem;
+    grid-template-columns: 0 270px 50px;
+    height: 1.7rem;
   }
   .main__wrap {
     margin-top: 4.5rem;
+  }
+  .toggle-button__wrap {
+    top: -0.7rem;
+    left: -0.5rem;
   }
   .mode-toggle__text {
     display: none;

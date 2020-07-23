@@ -32,8 +32,9 @@ ul {
   li {
     background: linear-gradient(to bottom, #ddd, #fff);
     margin: 1rem;
-    width: 20%;
     height: 200px;
+    width: 20%;
+    min-width: 120px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -58,10 +59,10 @@ p {
 @media only screen and (max-width: 520px) {
   ul li {
     .symbol {
-      font-size: 0.8rem;
+      font-size: 1.1rem;
     }
     .price {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
   }
 }
