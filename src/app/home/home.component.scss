@@ -7,8 +7,8 @@ $color2-d: #b290ff;
 $color0: #f3f0f1;
 
 span {
+  display: block;
   font-weight: bold;
-  background: lightgray;
   padding: 0.3em 0.8em;
   cursor: pointer;
 }
@@ -58,18 +58,21 @@ a {
     height: 3rem;
     background: #f3f0f1;
     position: relative;
-    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
     text-align: center;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px -4px 6px rgb(255 255 255 / 80%),
+      4px 4px 6px rgb(0 0 0 / 20%);
     opacity: 0.8;
     &:hover {
-      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.5),
+        inset 4px 4px 6px rgba(0, 0, 0, 0.1);
       opacity: 1;
+      span {
+        transform: translate(4px, 4px);
+      }
     }
   }
   .primary {

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Bitmain';
+  title = 'Bitma(i)n';
 
   darkModeActive: boolean = false;
   showMenu: boolean = false;
