@@ -82,6 +82,9 @@ $color5: #fd8;
   grid-gap: 1rem;
   transition: transform 300ms linear;
   will-change: transform;
+  .menu-footer {
+    padding-left: 2rem;
+  }
 }
 
 .slide-menu-active {
@@ -111,15 +114,21 @@ $color5: #fd8;
   background: linear-gradient(to bottom, $color2, #fff);
 }
 .menu-body__wrap {
+  box-sizing: border-box;
+  width: 20rem;
   font-size: 1.6rem;
   font-size: bold;
-  margin: 3rem;
+  margin: 2rem;
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  a {
+  a,
+  span {
+    display: block;
     text-decoration: none;
     width: 100%;
-    padding: 5px;
+    padding: 5px 1rem;
+  }
+  a {
     &:hover {
       color: $color3;
     }
