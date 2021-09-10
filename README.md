@@ -16,13 +16,19 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 
 # What is BITMAIN
-Web-App für Mobile-Trader, Kryptowährung und Devisen-Händler, Mobile responsive, Full Stack MEAN, Phase 1: Fontend focus.
+Web-App for Mobile-Trader, Kryptocurrency  and Forex-Trader, Mobile responsive, Full Stack MEAN, Phase 1: Frontend focus.
 
 ![img1]
 
-## Tools und Technologie:
-Frontend: Angular, Node.js, Webpack, TypeScript, SCSS, ..
-Backend: (Phase 2) Node.js, Express, Firebase BAAS/MongoDB/MySQL.
+## Techstacks & Tools:
+
+### Frontend:
+
+Angular, Node JS, TypeScript, SCSS, ..
+
+### Backend:
+
+(Phase 2) Node.js, Express, Firebase BAAS, MongoDB/MySQL.
 
 ![img1]
 
