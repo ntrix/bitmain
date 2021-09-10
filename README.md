@@ -1,4 +1,4 @@
-# Myapp
+# BITMAIN
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
@@ -13,6 +13,31 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+
+# What is BITMAIN
+Web-App für Mobile-Trader, Kryptowährung und Devisen-Händler, Mobile responsive, Full Stack MEAN, Phase 1: Fontend focus.
+
+![img1]
+
+## Tools und Technologie:
+Frontend: Angular, Node.js, Webpack, TypeScript, SCSS, ..
+Backend: (Phase 2) Node.js, Express, Firebase BAAS/MongoDB/MySQL.
+
+![img1]
+
+![img2]
+
+![img3]
+
+![img4]
+
+
+[img1]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login.jpg
+[img2]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login__error-modal.jpg
+[img3]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-crypto--isloaded.jpg
+[img4]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-side-menu.jpg
+
 
 ## Running unit tests
 
