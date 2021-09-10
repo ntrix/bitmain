@@ -30,20 +30,26 @@ Angular, Node JS, TypeScript, SCSS, ..
 
 (Phase 2) Node.js, Express, Firebase BAAS, MongoDB/MySQL.
 
-![img1]
+### *Login*
+![img-login]
 
-![img2]
+### *Dark mode*
+![img-darkmode]
 
-![img3]
+### *Loaded*
+![img-isloaded]
 
-![img4]
+### *Side Menu*
+![img-side-menu]
 
+### *Error Modal*
+![img-error-modal]
 
-[img1]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login.jpg
-[img2]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login__error-modal.jpg
-[img3]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-crypto--isloaded.jpg
-[img4]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-side-menu.jpg
-
+[img-login]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login.jpg
+[img-darkmode]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-signup--dark.jpg
+[img-isloaded]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-crypto--isloaded.jpg
+[img-side-menu]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-side-menu.jpg
+[img-error-modal]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login__error-modal.jpg
 
 ## Running unit tests
 
