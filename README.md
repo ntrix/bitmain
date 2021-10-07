@@ -45,11 +45,11 @@ Angular, Node JS, TypeScript, SCSS, ..
 ### *Error Modal*
 ![img-error-modal]
 
-[img-login]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login.jpg
-[img-darkmode]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-signup--dark.jpg
-[img-isloaded]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-crypto--isloaded.jpg
-[img-side-menu]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-side-menu.jpg
-[img-error-modal]: https://www.ntien.com/assets/img/projekte/bitmain/bitmain-login__error-modal.jpg
+[img-login]: https://github.com/ntrix/ntien/raw/test1/assets/img/bitmain/bitmain-login.jpg
+[img-darkmode]: https://github.com/ntrix/ntien/raw/test1/assets/img/bitmain/bitmain-signup--dark.jpg
+[img-isloaded]: https://github.com/ntrix/ntien/raw/test1/assets/img/bitmain/bitmain-crypto--isloaded.jpg
+[img-side-menu]: https://github.com/ntrix/ntien/raw/test1/assets/img/bitmain/bitmain-side-menu.jpg
+[img-error-modal]: https://github.com/ntrix/ntien/raw/test1/assets/img/bitmain/bitmain-login__error-modal.jpg
 
 ## Running unit tests
 
